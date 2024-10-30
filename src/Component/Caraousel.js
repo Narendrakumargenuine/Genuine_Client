@@ -8,7 +8,7 @@ import Image6 from "../Assets/CaraouselImage/steeringcolumn.png";
 
 
 const Carousel = () => {
-  // Array of objects holding image paths and names
+  // Array of objects holdin image paths and names
   const slides = [
     { src: Image4, name: "CRV Starter Motor" },
     { src: Image3, name: "Electric Steering Column" },
