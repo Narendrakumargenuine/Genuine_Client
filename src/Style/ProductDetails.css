@@ -1,0 +1,281 @@
+/* Outer Container */
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Outer Container */
+.product-details-container {
+  width: 100%;
+  margin: auto;
+}
+.stroke {
+  -webkit-text-stroke: 1px green;
+  color: transparent;
+}
+
+/* Heading */
+.product-details-heading {
+  text-align: center;
+  color: #064c1b;
+  font-size: 26px;
+}
+.product-details-content {
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px 0px;
+  background-color: lightgray;
+}
+/* Main Content Section */
+.product-details-content > div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0px 20px;
+}
+.head-desc {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl; /* Rotate the text vertically */
+  transform: rotate(180deg); /* Optional: to make it read top to bottom */
+  font-size: 30px; /* Adjust font size as needed */
+}
+.product-details-content > div > div {
+  width: 100%;
+  height: 300px;
+}
+.product-details-content > div > div > img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.product-details-text {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.product-para {
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 500;
+}
+
+/* .first-second-aboutus1{
+    margin-top: 30px;
+  } */
+.first-second-aboutus11 {
+  margin-top: 40px;
+}
+.first-h31 {
+  font-size: 20px;
+  color: #064c1b;
+  text-align: center;
+  font-weight: 700;
+}
+
+.first-second-section1 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+  margin-top: 50px;
+}
+.first-second-section1 > .first-second-aboutus1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+.first-second-section1 > .first-second-aboutus1 > div {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.first-second-section1 > .first-second-aboutus1 > div > p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.5px;
+  margin-top: 20px;
+}
+.first-second-section1 > .first-second-aboutus1 > div > p > span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22.5px;
+}
+
+.first-second-section1 > .imga-aboutus11 {
+  width: 50%;
+  height: 329px;
+}
+
+.first-second-section1 > .imga-aboutus11 > img {
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imga-aboutus11 {
+  margin-top: 16px;
+}
+.carousel-container1 {
+  height: 176px;
+}
+
+.premium-service11 {
+  margin-top: 20px;
+  margin-bottom: -3%;
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+  .first-second-section1 > .imga-aboutus11 {
+    width: 100%;
+    height: 296px;
+    margin-top: 0px;
+  }
+
+  .first-second-section1 > .imga-aboutus11 > img {
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .carousel-container1 {
+    height: 231px;
+  }
+  .first-h31 {
+    margin-top: 20px;
+  }
+  .vertical-text {
+  text-align: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 699px) {
+  .vertical-text {
+    text-align: center;
+    }
+  .carousel-container1 {
+    height: 247px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .vertical-text {
+    text-align: center;
+    }
+  .product-details-content > div {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product-para {
+    width: 100%;
+    font-size: 13px;
+  }
+  .first-second-section1 > .first-second-aboutus1 > div > p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22.5px;
+    margin-top: 20px;
+  }
+  .first-second-section1 > .first-second-aboutus1 > div > p > span {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22.5px;
+  }
+
+  .first-h31 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .first-h31 > p {
+    width: 97%;
+    font-size: 13px;
+  }
+  #advance {
+    margin-top: -10px;
+  }
+  .premium-service11 {
+    height: 65px;
+  }
+  .vertical-text {
+    transform: none;
+    font-size: 24px;
+    writing-mode: horizontal-tb;
+  }
+  .first-second-section1 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .first-second-section1 > .first-second-aboutus1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+  }
+  .first-second-section1 > .imga-aboutus11 {
+    width: 100%;
+    height: 265px;
+    margin-top: 0px;
+  }
+
+  .first-second-section1 > .imga-aboutus11 > img {
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .first-second-section1 > .imga-aboutus11 {
+    width: 100%;
+    height: 265px;
+    margin-top: 0px;
+  }
+  #img-2 {
+    margin-top: -30px;
+  }
+  #img-3 {
+    margin-top: -30px;
+  }
+  .head-desc {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+  .premium-service11 {
+    height: 110px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Sahbaaz css end  */
+
+

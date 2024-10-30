@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  margin: auto;
+}
+
+.about {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+}
+
+.about-h1 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: #064c1b;
+  font-weight: bold;
+}
+.stroke {
+  -webkit-text-stroke: 1px green;
+  color: transparent;
+}
+.welcome {
+  width: 90%;
+  margin: auto;
+  line-height: 22.5px;
+}
+
+.product-sample {
+  width: 100%;
+  background-color: #eaeaea;
+  margin-top: 20px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.product-append {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.premium-service {
+  width: 100%;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.image-append {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+.pro-con {
+  height: 72%;
+}
+.prod {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-second {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.navbar-third {
+  display: flex;
+}
+.navbar-third > button {
+  border: 1px solid #094e1f;
+  color: #094e1f;
+  font-weight: bold;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffff;
+}
+.navbar-third > div {
+  border-radius: 20px;
+  border: 1px solid #094e1f;
+  color: #094e1f;
+  display: flex;
+  font-weight: bold;
+  padding: 5px 15px 5px 15px;
+  margin-left: 20px;
+}
+.navbar-second > ul > li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cont-first-second {
+  display: flex;
+  margin-top: 18px;
+  justify-content: space-evenly;
+}
+.cont-first-second > p {
+  margin: 0px 10px;
+  color: #094e1f;
+  cursor: pointer;
+}
+
+.container-second-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-second-div > div {
+  margin: 20px 10px;
+  color: #094e1f;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.caraousel {
+  width: 100%; /* Set the width of the container */
+  /* height: 600px; Set a fixed height for the container (adjust as needed) */
+  overflow: hidden; /* Hide any overflow outside the container */
+  display: flex;
+ 
+  margin-bottom: 50px;
+}
+
+
+.product-append > div > div {
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+.product-append > div > p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.product-append > div > div:hover {
+  transform: scale(1.1);
+}
+/* .product-append>div>div>img{
+    height: 200px;
+    width: 200px;
+} */
+.product-append > div > div > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.image-append > div > img {
+  height: 100px;
+  width: 120px;
+}
+
+/* @media (min-width: 769px) and (max-width: 1268px) {
+   
+  } */
+
+/* Premium Services Updated CSS */
+
+/* Responsive Design for Tablets */
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .caraousel {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .det {
+    width: 100%;
+    text-align: start;
+    font-size: 14px;
+  }
+  .about-h1 {
+    font-size: 22px;
+  }
+
+  .product-sample {
+    width: 100%;
+    background-color: #eaeaea;
+    margin-top: 20px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  .product-append {
+    width: 99%;
+    margin: auto;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  .pro-con {
+    height: 79%;
+  }
+  .product-append > div > div {
+    width: 100%;
+  }
+
+  .product-append > div > div > img {
+    height: 232px;
+    width: 261px;
+  }
+  .second-div {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    height: 302px;
+  }
+}
+@media (min-width: 560px) and (max-width: 850px) {
+  .product-append {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .product-append {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 40px;
+  }
+}

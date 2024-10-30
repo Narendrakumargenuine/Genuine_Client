@@ -1,0 +1,98 @@
+.first-heading{
+    font-size: 26px;
+    font-weight: 560;
+    line-height: 39px;
+    text-align: center;
+    color: #064c1b;
+    margin-bottom: 16px;
+}
+.fa-first-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+#faq1{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+#faq1 > h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#faq1 > .faq1Div{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#faq1 > .faq1Div > .faq1logodiv{
+    padding-top: 20px;
+    width: 35%;
+    height: 50%;
+}
+#faq1 > .faq1Div > .faq1logodiv > img{
+    width: 80%;
+    height: 200px;
+}
+#faq1questions{
+    width: 45%;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+#faq1questions .faq1question{
+     display: flex;
+     justify-content: space-between;
+}
+#faq1questions .questionanswer{
+    font-size: 13px;
+    margin-top: 12px;
+    line-height: 20px;
+    color: grey;
+}
+#faq1questions .faq1question{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+#faqquestions1{
+    width: 70%;
+    padding: 0 0px;
+}
+
+#faqquestions1 .faqquestion{
+     display: flex;
+     justify-content: space-between;
+}
+#faqquestions1 .questionanswer{
+    font-size: 13px;
+    margin-top: 12px;
+    line-height: 20px;
+    color: grey;
+}
+#faqquestions1 .faqquestion{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px){
+    #faqquestions1{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 0 0px;
+    }
+}

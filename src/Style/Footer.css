@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
+}
+
+.footer-main {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #094e1f;
+    padding: 35px 20px 0px 20px;
+}
+.product-service-div{
+    text-decoration: none;
+    color: #ffff;
+}
+.second-product-ser{
+    display:flex;
+    column-gap:30px;
+    width:70%;
+}
+.footer-main > .footer-first-div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+.footer-main > .footer-first-div > .footer-first-div-first {
+    width: 30%;
+}
+.footer-main > .footer-first-div > div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* Centering the second div */
+.footer-first-div-second {
+    width: 30%;
+    margin-left: 120px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Align third div to the right */
+.footer-first-div-third {
+    text-align: right;
+}
+
+.footer-seocnd-div-second {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-second-div > :first-child {
+    text-align: center;
+}
+.footer-seocnd-div-second:nth-child(2) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-seocnd-div-second:nth-child(2) * {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer-second-div-second-first-border {
+    border: 1.6px solid white;
+    width: 30.6%;
+    height: 0px;
+    margin-top: 10px;
+}
+
+.footer-bottom-border {
+    border: 1.6px solid white;
+    width: 90%;
+    height: 0px;
+    margin: auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.footer-third-div {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.footer-third-div-first {
+    display: flex;
+}
+
+.footer-third-div-first {
+    width: 54%;
+    margin: auto;
+    margin-top: 10px;
+}
+.footer-third-div-first > img {
+    margin: 5px;
+}
+.last-footer-section{
+    width: 100%;
+    color:white;
+    font-size:20px;
+    padding-bottom: 4px;
+}
+.last-footer-section>p{
+     width: 100%;
+}
+@media (max-width: 768px) { /* Mobile view */
+
+    .second-product-ser{
+        width: 90%;
+    }
+
+    .footer-third-div {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: -5px;
+    }
+    .footer-bottom-border {
+      display: none;
+    }
+    .last-footer-section{
+        width: 96%;
+        margin: auto;
+        color:white;
+        font-size: 14px;
+    }
+    .footer-seocnd-div-second:nth-child(2) {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .footer-main {
+        width: 100%;
+        padding: 25px 20px;
+    }
+    .footer-main > .footer-first-div > .footer-first-div-first {
+        width: 100%;
+    }
+    .footer-main > .footer-first-div {
+        flex-direction: column;
+    }
+    .footer-main > .footer-first-div > div {
+        width: 100%;
+    }
+    .footer-first-div-second {
+        margin-left: 0;
+        flex: none;
+    }
+    .footer-first-div-third {
+        text-align: center;
+    }
+    .footer-third-div-first {
+        width: 50%;
+    }
+    .footer-seocnd-div-second {
+        flex-direction: column;
+    }
+    .footer-second-div-second-first-border {
+        display: none;
+    }
+}
+
+/* Mobile and tablet responsiveness */
+ @media (max-width: 1000px) { /* Tablet view */
+    .footer-main {
+        padding: 35px 20px;
+    }
+    .footer-main > .footer-first-div {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-main > .footer-first-div > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-first-div-second {
+        margin-left: 0;
+        flex: none;
+    }
+    .footer-first-div-third {
+        text-align: center;
+    }
+    .footer-third-div-first {
+        width: 80%;
+    }
+} 
+
+
