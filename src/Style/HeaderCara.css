@@ -5,7 +5,7 @@
     height: 500px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 5px;
+    /* margin-top: 5px; */
   }
   
   /* Carousel slides wrapper */
@@ -102,7 +102,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        height: 400px;
+        height: 307px;
       }
       .carousel-caption112 {
       
@@ -116,7 +116,7 @@
       }
     .carousel-container222 {
       width: 100%;
-      height: 400px;
+      height: 300px;
     }
   
     .carousel-image112 {

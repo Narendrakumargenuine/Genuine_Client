@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { Link, useLocation } from "react-router-dom";
 import { IoIosCall } from "react-icons/io";
 import EnquiryModal from "./EnquiryModal";
-import "../Style/Navbar.css"; // Make sure to import CSS for styling
+import "../Style/Navbar.css";
 import Logo from "../Assets/logo.jpg";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const location = useLocation(); // Get the current path
+  const [activeLink, setActiveLink] = useState("/");
 
   const handleMenuToggle = () => {
     setIsMobile(!isMobile);
@@ -23,6 +23,10 @@ const Navbar = () => {
     setShowModal(!showModal);
   };
 
+  const handleActiveLink = (path) => {
+    setActiveLink(path);
+  };
+
   const mobile = window.innerWidth <= 768;
 
   return (
@@ -33,23 +37,40 @@ const Navbar = () => {
             <img src={Logo} className="nav-img" alt="Logo" />
           </div>
           <div className="navbar-second">
-          <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
-  <p>Home</p>
-</Link>
-<Link to="/aboutus" className={location.pathname === "/aboutus" ? "active-link" : "non-about"}>
-  <p>About Us</p>
-</Link>
-<Link to="/productandservice" className={location.pathname === "/productandservice" ? "active-link" : ""}>
-  <p>Product & Services</p>
-</Link>
+            <Link
+              to="/"
+              onClick={() => handleActiveLink("/")}
+              className={activeLink === "/" ? "active-link" : ""}
+            >
+              <p>Home</p>
+            </Link>
+            <Link
+              to="/aboutus"
+              onClick={() => handleActiveLink("/aboutus")}
+              className={activeLink === "/aboutus" ? "active-link" : ""}
+            >
+              <p>About Us</p>
+            </Link>
+            <Link
+              to="/productandservice"
+              onClick={() => handleActiveLink("/productandservice")}
+              className={activeLink === "/productandservice" ? "active-link" : ""}
+            >
+              <p>Product & Services</p>
+            </Link>
           </div>
           <div className="navbar-third">
-            <button onClick={toggleModal}>Enquiry Now</button>
-            <div >
-            <div className={location.pathname === "/contactus" ? "active-link1" : "non-active"}> <IoIosCall style={{ marginTop: "3px", marginRight: "3px", fontSize: "13px" }} />
-              <Link to="/contactus" >
-                <p>Contact Us</p>
-              </Link></div>
+            <button onClick={toggleModal} className="enquiry-button">Enquiry Now</button>
+            <div  
+                onClick={() => handleActiveLink("/contactus")}
+                className={activeLink === "/contactus" ? "active-link1" : "contact"}>
+             {/* cont2222 */}
+              <IoIosCall   className={activeLink === "/contactus" ? "active-link2" : "contact1"}/>
+              <Link
+               to={"/contactus"} 
+              >
+                <p className={activeLink === "/contactus" ? "active-link24" : "cont222"}>Contact Us</p>
+              </Link>
              
             </div>
           </div>
@@ -58,7 +79,7 @@ const Navbar = () => {
         <nav className="navbar1">
           <div className="logo">
             <Link to="/">
-              <img src={Logo} className="nav-imag" alt="Logo" />
+              <img src={Logo} className="nav-img" alt="Logo" />
             </Link>
           </div>
           <div className="hamburger" onClick={handleMenuToggle}>
@@ -66,28 +87,43 @@ const Navbar = () => {
           </div>
           <ul className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={closeMobileMenu}>
             <li>
-              <Link to="/" className={location.pathname === "/" ? "active-link" : ""} onClick={closeMobileMenu}>
+              <Link
+                to="/"
+                onClick={() => { closeMobileMenu(); handleActiveLink("/"); }}
+                className={activeLink === "/" ? "active-link" : ""}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/aboutus" className={location.pathname === "/aboutus" ? "active-link" : ""} onClick={closeMobileMenu}>
+              <Link
+                to="/aboutus"
+                onClick={() => { closeMobileMenu(); handleActiveLink("/aboutus"); }}
+                className={activeLink === "/aboutus" ? "active-link" : ""}
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/productandservice" className={location.pathname === "/productandservice" ? "active-link" : ""} onClick={closeMobileMenu}>
+              <Link
+                to="/productandservice"
+                onClick={() => { closeMobileMenu(); handleActiveLink("/productandservice"); }}
+                className={activeLink === "/productandservice" ? "active-link" : ""}
+              >
                 Products & Services
               </Link>
             </li>
             <li>
-             
-              <Link className={location.pathname === "/productandservice" ? "active-link" : ""} onClick={toggleModal}>
-              Enquiry
-              </Link>
+              <button className="enquiry-button" onClick={toggleModal}>
+                Enquiry
+              </button>
             </li>
             <li>
-              <Link to="/contactus" className={location.pathname === "/contactus" ? "active-link" : ""} onClick={closeMobileMenu}>
+              <Link
+                to="/contactus"
+                onClick={() => { closeMobileMenu(); handleActiveLink("/contactus"); }}
+                className={activeLink === "/contactus" ? "active-link" : ""}
+              >
                 Contact Us
               </Link>
             </li>
@@ -95,7 +131,6 @@ const Navbar = () => {
         </nav>
       )}
 
-      {/* Enquiry Modal */}
       {showModal && <EnquiryModal onClose={toggleModal} />}
     </>
   );

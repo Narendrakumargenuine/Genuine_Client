@@ -100,7 +100,7 @@ const Home = () => {
   const isMobile = window.innerWidth <= 768;
   return (
     <div className="main-container">
-      
+       <div className="aboutus-border244"></div>
       <HeaderCaraousel/>
   
       <div className="about us">

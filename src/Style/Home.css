@@ -12,7 +12,9 @@ body {
   width: 100%;
   margin: auto;
 }
-
+.aboutus-border244{
+  border: 1px solid black
+}
 .about {
   width: 100%;
   margin: auto;
