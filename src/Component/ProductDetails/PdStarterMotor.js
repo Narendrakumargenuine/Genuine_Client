@@ -10,6 +10,7 @@ import Service7 from "../../Assets/ServiceImage/pngegg (11) 1.png";
 import Service8 from "../../Assets/ServiceImage/pngegg (12) 1.png";
 import { IoIosCall } from "react-icons/io";
 import { Link } from "react-router-dom";
+import PdContact from "../PdContact";
 import Logo from "../../Assets/logo.jpg";
 import { MdOutlineAttachFile } from "react-icons/md";
 import "../../Style/ProductDetails.css";
@@ -433,55 +434,7 @@ const PdStarterMotor = () => {
         </div>
       </div>
       <div className="contact-container1">
-            <div className="contact-first-section">
-                <div className="first-div1">
-                    <div className="input-group">
-                        {/* <label htmlFor="fullName">Enter Your Full Name *</label> */}
-                        <input id="fullName" placeholder="Enter Your Full Name" required />
-                    </div>
-
-                    <div className="input-group">
-                        {/* <label htmlFor="contactNumber">Enter Your Contact Number *</label> */}
-                        <input id="contactNumber" placeholder="Enter Your Contact Number" required />
-                    </div>
-
-                    <div className="input-group">
-                        {/* <label htmlFor="email">Enter Your Email *</label> */}
-                        <input id="email" placeholder="Enter Your Email" required />
-                    </div>
-
-                    <div className="input-group">
-                        <label htmlFor="description">Queries if any (optional)</label>
-                        <textarea id="description" placeholder="Description" rows="4" required></textarea>
-                    </div>
-                    <div className="input-group">
-            {/* Hidden file input */}
-            <input
-              id="fileUpload"
-              type="file"
-              accept="image/*"
-              style={{ display: "none" }} // Hide the default file input
-              onChange={(e) => console.log(e.target.files[0])} // Handle the file selection here
-              required
-            />
-
-            {/* Custom button to trigger file upload */}
-            <button
-              type="button"
-              onClick={() => document.getElementById("fileUpload").click()}
-              className="upload-button"
-            >
-              <MdOutlineAttachFile size={25} />
-              Attach Product Image
-            </button>
-          </div>
-
-                    <button type="submit">Submit</button>
-                </div>
-                {/* <div className="second-div">
-                    <div className="map-here"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62204.23025164141!2d77.5593344!3d12.9869159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e716408af1%3A0x275f98002bf46061!2sB.%20W.%20Lions%20Super%20Speciality%20Eye%20Hospital!5e0!3m2!1sen!2sin!4v1729772137325!5m2!1sen!2sin"  style={{"border":"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                </div> */}
-            </div>
+      <PdContact/>
         </div>
 
       <FAQs />

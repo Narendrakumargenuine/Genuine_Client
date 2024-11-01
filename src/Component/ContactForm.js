@@ -12,11 +12,13 @@ import Service7 from "../Assets/ServiceImage/pngegg (11) 1.png";
 import Service8 from "../Assets/ServiceImage/pngegg (12) 1.png";
 import Service9 from "../Assets/ServiceImage/Prestolite_Electric_logo.svg 1.png";
 import Logo from "../Assets/logo.jpg"
+import emailjs from "emailjs-com";
 import Navbar  from "./Navbar";
 import { Link } from "react-router-dom";
 import { IoIosCall } from "react-icons/io";
 import Footer from "./Footer";
 import PremiumSection from "./PremiumSection";
+import PdContact from "./PdContact";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -37,8 +39,7 @@ const ContactForm = () => {
       [id]: value,
     }));
   };
-;
-const iseMobile = window.innerWidth <= 768;
+
   // Handle file selection
   const handleFileChange = (e) => {
     setFiles(Array.from(e.target.files)); // Store selected files as an array
@@ -87,6 +88,26 @@ const iseMobile = window.innerWidth <= 768;
         setTimeout(() => {
           setMessage("");
         }, 3000);
+        // Send data to EmailJS after successful save
+        const emailParams = {
+          fullname: formData.fullname,
+          phone: formData.phone,
+          email: formData.email,
+          description: formData.description,
+        };
+        emailjs
+          .send(
+            "service_f0yugym",
+            "template_di8ac9g",
+            emailParams,
+            "WNVRLm7EPOd71vbkQ"
+          )
+          .then(() => {
+            console.log("Email sent successfully!");
+          })
+          .catch((error) => {
+            console.error("EmailJS Error:", error);
+          });
       } else {
         setMessage(result.msg || "Failed to save contact.");
       }
@@ -125,8 +146,8 @@ const iseMobile = window.innerWidth <= 768;
          
         </div>
         <div className="second-cont-div" style={{backgroundColor:"white"}}>
-        <h2>Enquiry </h2>
-          <form>
+        <h2>Enquiry </h2> 
+          {/* <form>
             <input type="text" placeholder="Enter your Full Name *" required />
             <input type="tel" placeholder="Enter your Contact No *" required />
             <input type="email" placeholder="Enter your E-mail *" required />
@@ -178,8 +199,110 @@ const iseMobile = window.innerWidth <= 768;
           
             <textarea placeholder="Queries if any (optional)" rows="4"></textarea>
             <input type="submit" value="Submit" />
-          </form>
-          
+          </form> */}
+          <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <input
+              id="fullname"
+              placeholder="Enter Your Full Name"
+              required
+              value={formData.fullname}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="input-group">
+            <input
+              id="phone"
+              placeholder="Enter Your Contact Number"
+              required
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="input-group">
+            <input
+              id="email"
+              placeholder="Enter Your Email"
+              required
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="input-group" style={{marginTop:"-30px"}}>
+            <label htmlFor="description">Queries if any (optional)</label>
+            <textarea
+              id="description"
+              placeholder="Description"
+              rows="4"
+              value={formData.description}
+              onChange={handleChange}
+              style={{"overflow-y":"scroll",height:"50px"}}
+            ></textarea>
+          </div>
+
+          <div className="input-group" style={{marginTop:"-20px"}}>
+            <input
+              id="fileUpload"
+              type="file"
+              accept="image/*"
+              multiple // Allow multiple files
+              style={{ display: "none" }}
+              onChange={handleFileChange}
+            />
+            <button
+              type="button"
+              onClick={() => document.getElementById("fileUpload").click()}
+              className="upload-button"
+            >
+              <MdOutlineAttachFile size={25} />
+              Attach Product Images
+            </button>
+            {files.length > 0 && (
+              <div>
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "white",
+                    marginTop: "10px",
+                  }}
+                >
+                  Selected files:
+                </p>
+                <ul>
+                  {files.map((file, index) => (
+                    <li
+                      style={{
+                        color: "white",
+                      }}
+                      key={index}
+                    >
+                      {file.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <button style={{marginTop:"-20px",backgroundColor:"#064c1b",color:"white"}} className="submitBtn" type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </button>
+          {message && (
+            <p
+              style={{
+                textAlign: "center",
+                color: "white",
+                marginTop: "10px",
+              }}
+              className="form-message"
+            >
+              {message}
+            </p>
+          )}
+        </form>
           </div>
         </div>
         {/* Right Section: Contact Form */}
@@ -188,7 +311,7 @@ const iseMobile = window.innerWidth <= 768;
       </div>
       
         {
-          iseMobile?
+          isMobile?
           <div className="second-div22">
           <PremiumSection/>
           </div>:

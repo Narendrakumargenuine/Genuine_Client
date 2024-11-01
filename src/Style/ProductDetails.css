@@ -23,6 +23,11 @@ body {
   color: #064c1b;
   font-size: 26px;
 }
+.contact-container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .product-details-content {
   width: 100%;
   margin: auto;

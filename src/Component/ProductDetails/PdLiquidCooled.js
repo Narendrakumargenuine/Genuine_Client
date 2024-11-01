@@ -10,6 +10,7 @@ import Service7 from "../../Assets/ServiceImage/pngegg (11) 1.png";
 import Service8 from "../../Assets/ServiceImage/pngegg (12) 1.png";
 import { IoIosCall } from "react-icons/io";
 import { Link } from "react-router-dom";
+import PdContact from "../PdContact";
 import Logo from "../../Assets/logo.jpg"
 import '../../Style/ProductDetails.css';
 import { useParams } from 'react-router-dom';
@@ -270,54 +271,7 @@ const PdAcComp = () => {
           
             </div>
             <div className="contact-container1">
-            <div className="contact-first-section">
-                <div className="first-div1">
-                    <div className="input-group">
-                        {/* <label htmlFor="fullName">Enter Your Full Name *</label> */}
-                        <input id="fullName" placeholder="Enter Your Full Name" required />
-                    </div>
-
-                    <div className="input-group">
-                        {/* <label htmlFor="contactNumber">Enter Your Contact Number *</label> */}
-                        <input id="contactNumber" placeholder="Enter Your Contact Number" required />
-                    </div>
-
-                    <div className="input-group">
-                        {/* <label htmlFor="email">Enter Your Email *</label> */}
-                        <input id="email" placeholder="Enter Your Email" required />
-                    </div>
-
-                    <div className="input-group">
-                        <label htmlFor="description">Queries if any (optional)</label>
-                        <textarea id="description" placeholder="Description" rows="4" required></textarea>
-                    </div>
-
-                    <div className="input-group">
-            {/* Hidden file input */}
-            <input
-              id="fileUpload"
-              type="file"
-              accept="image/*"
-              style={{ display: "none" }} // Hide the default file input
-              onChange={(e) => console.log(e.target.files[0])} // Handle the file selection here
-              required
-            />
-
-            {/* Custom button to trigger file upload */}
-            <button
-              type="button"
-              onClick={() => document.getElementById("fileUpload").click()}
-              className="upload-button"
-            >
-              <MdOutlineAttachFile size={25} />
-              Attach Product Image
-            </button>
-          </div>
-
-                    <button type="submit">Submit</button>
-                </div>
-               
-            </div>
+      <PdContact/>
         </div>
      <FAQs/>
      <Footer/>
