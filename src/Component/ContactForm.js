@@ -312,7 +312,9 @@ const ContactForm = () => {
       
         {
           isMobile?
-            ""
+            <div className="second-div22">
+          <PremiumSection/>
+          </div>
             :
           <div className="second-div">
         <h1 style={{fontSize:"15px"}}><span style={{fontSize:"13px"}}>A Premium Service Brands for </span>MultiBrands</h1>
