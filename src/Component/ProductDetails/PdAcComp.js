@@ -61,7 +61,7 @@ const PdAcComp = () => {
         isMobile? <div className="product-details-content">
            <h1 className='vertical-text stroke'>AC Compressor</h1>
            <PdSlider images={imageData}/>
-           <h1 style={{textAlign:"center",fontSize:"16px"}}>Keeping Your Vehicle Cool and Comfortable</h1>
+           <h1 style={{textAlign:"center",fontSize:"16px",width:"95%",margin:"auto"}}>Keeping Your Vehicle Cool and Comfortable</h1>
           </div>:
         <div className="product-details-content">
         <div>
