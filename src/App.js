@@ -1,18 +1,19 @@
-
 import { BrowserRouter as Router } from "react-router-dom";
-import Content from './Component/Content'
+import Content from "./Component/Content";
 import Navbar from "./Component/Navbar";
 import ScrollToTop from "./Component/ScrollTotop";
+import Header from "./Component/Header";
 
 function App() {
   const isMobile = window.innerWidth <= 768;
   return (
     <div className="App">
-     <Router>
+      <Router>
         <div id="appMain">
-         <Navbar/>
-         <ScrollToTop />
-         <Content/>
+          <Header />
+          <Navbar />
+          <ScrollToTop />
+          <Content />
         </div>
       </Router>
     </div>
