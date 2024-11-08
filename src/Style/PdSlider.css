@@ -36,6 +36,7 @@
 @media (max-width: 768px) {
     .carousel-container1 {
         width: 100%; /* Full width for mobile */
+        height:"100px";
     }
 
     /* Maintain horizontal layout for mobile */

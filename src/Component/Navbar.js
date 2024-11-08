@@ -95,7 +95,7 @@ const Navbar = () => {
                     activeLink === "/refurbished" ? "active-link" : ""
                   }
                 >
-                  <p>Refurbished</p>
+                  <p>OE-RECON</p>
                 </Link>
                 <Link
                   to="/productandservice"

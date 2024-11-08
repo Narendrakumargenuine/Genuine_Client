@@ -186,6 +186,7 @@ body {
     text-align: center;
     }
   .product-details-content > div {
+    height: 173px;
     flex-direction: column;
     gap: 20px;
   }
@@ -227,6 +228,7 @@ body {
   .first-second-section1 {
     width: 100%;
     flex-direction: column;
+    margin-top: 0px;
   }
   .first-second-section1 > .first-second-aboutus1 {
     display: flex;

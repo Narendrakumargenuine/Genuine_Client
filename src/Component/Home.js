@@ -16,9 +16,7 @@ import Image2 from "../Assets/ProductsWeDo/Group 484.png";
 import Image3 from "../Assets/ProductsWeDo/download 3.png";
 import Image4 from "../Assets/ProductsWeDo/download 4.png";
 import Image5 from "../Assets/ProductsWeDo/download 5.png";
-import Image6 from "../Assets/ProductsWeDo/images 1.png";
 import Image7 from "../Assets/ProductsWeDo/images 2.png";
-import { IoIosCall } from "react-icons/io";
 import Service0 from "../Assets/ServiceImage/download 6.png";
 import Service1 from "../Assets/ServiceImage/download 8.png";
 import Service2 from "../Assets/ServiceImage/download 9.png";
@@ -106,7 +104,7 @@ const Home = () => {
       <div className="about us">
         <div>
         <h1 className="about-h1">
-          About <span className="stroke">GenuineServe</span>
+          About <span className="stroke">Genuine Serve</span>
         </h1>
         <div className="welcome-serve">
         <h3 className="about-h1">Welcome to Genuine Serve</h3>
