@@ -194,6 +194,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+            <Link
+                  to="/refurbished"
+                  onClick={() => handleActiveLink("/refurbished")}
+                  className={
+                    activeLink === "/refurbished" ? "active-link" : ""
+                  }
+                >
+                  <p>Refurbished</p>
+                </Link>
+            </li>
+            <li>
               <button className="enquiry-button" onClick={toggleModal}>
                 Enquiry
               </button>
