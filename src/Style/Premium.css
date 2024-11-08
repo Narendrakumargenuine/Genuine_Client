@@ -1,63 +1,43 @@
-/* Carousel container */
-.carousel-container1 {
+.carousel-container2 {
     position: relative;
-    width: 1004px; /* Width of the carousel */
-    height: 182px; /* Height of the carousel */
-    overflow: hidden; 
-    margin: 0 auto; /* Center the carousel */
-    margin-top: -10px;
-}
-
-/* Carousel slides wrapper */
-.carousel-slides1 {
-    display: flex; /* Display slides in a row */
-    width: 100%; /* Full width of the carousel */
-    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
-}
-
-/* Individual slide item */
-.carousel-item1 {
-    width: 100%; /* Each slide takes full width */
-    flex-shrink: 0; /* Prevent slides from shrinking */
-    display: flex; /* Keep images in a row */
-    justify-content: space-between; /* Space images evenly */
-    align-items: center; /* Align images vertically centered */
-}
-
-/* Individual slide image */
-.carousel-image1 {
-    flex: 1; /* Allow images to grow and fill available space */
-    max-height: 150px; /* Optional: limit the image height */
-    object-fit: cover; /* Cover the area without distortion */
-    margin: 0 5px; /* Add margin between images */
-}
-
-
-@media (max-width: 768px) {
-    .carousel-container1 {
-        width: 100%; /* Full width for mobile */
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .about-h1-2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-slider2 {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-track2 {
+    display: flex;
+    gap: 20px;
+    animation: scroll1 20s linear infinite;
+  }
+  
+  .carousel-item2 {
+    width: 250px;
+    margin: 0 10px;
+  }
+  
+  .carousel-image2 {
+    width: 100%;
+    height: 70px;
+  }
+  
+  @keyframes scroll1 {
+    0% {
+      transform: translateX(0);
     }
-
-    /* Maintain horizontal layout for mobile */
-    .carousel-item1 {
-        flex-direction: row; /* Ensure images remain in a row */
-        align-items: center; /* Center images vertically */
-        margin-top: 20px;
+    100% {
+      transform: translateX(-50%);
     }
-
-    .carousel-image1 {
-        width: calc(33.33% - 10px); /* Adjust width for 3 images in a row */
-      /* Limit image height on mobile */
-        margin: 0 5px; /* Maintain margin between images */
-        object-fit: contain;
-    }
-}
-
-/* Responsive Styles for Tablets and Mobile */
-@media (max-width: 1024px) {
-    .carousel-container1 {
-        width: 90%; /* Reduce width to fit tablet screens */
-        height: auto; /* Allow height to adjust dynamically */
-    }
-}
-
+  }
+  

@@ -62,8 +62,8 @@
   gap: 10px;
 }
 .fa-phone {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 26px;
   display: flex;
   align-items: center;
   background-color: #a00000;
@@ -71,6 +71,7 @@
   border-radius: 4px;
   color: white;
   font-size: 12px;
+  margin-top: -6px;
 }
 .link-container {
   display: flex;
@@ -154,7 +155,23 @@
 .navbar-third-sec .contact.active-link .contact1 {
   color: white !important; /* Active color for contact text and icon */
 }
-
+.whatsapp-container1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: #25d366; /* WhatsApp green background */
+  border-radius: 20%;
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+ /* Ensure it stays above other elements */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+.whatsapp-container1 > i {
+  color: white; /* Icon color */
+  font-size: 20px; /* Icon size */
+}
 /* Additional Active Styles */
 .active-link1 {
   background-color: rgb(63, 99, 63);
@@ -226,17 +243,26 @@
 }
 /* Mobile View Styling */
 @media (max-width: 768px) {
+  .navbar-third-sec {
+    width: 100%;
+    /* display: flex;
+    align-items: start;
+    justify-content: center; */
+  }
+  .location-link{
+    text-decoration: none;
+  }
   .navbar1 {
+    width: 96%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding-right: 20px;
   }
 
   .logo {
     width: 80%;
-    padding-left: 20px;
   }
 
   .logo .nav-img {

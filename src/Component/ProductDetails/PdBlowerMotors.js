@@ -11,6 +11,7 @@ import Service8 from "../../Assets/ServiceImage/pngegg (12) 1.png";
 import { IoIosCall } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/logo.jpg"
+import PremiumSection from '../PremiumSection';
 import PdContact from "../PdContact";
 import '../../Style/ProductDetails.css';
 import { useParams } from 'react-router-dom';
@@ -193,33 +194,8 @@ const PdAcComp = () => {
                     </div>
      </div>
      <div className="premium-service11">
-     <div className="carousel-container1">
-            <div
-                className="carousel-slides1"
-                style={{ transform: `translateX(${-currentSlide * 100}%)` }}
-            >
-                {slides.map((slide, index) => (
-                    <div key={index} className="carousel-item1">
-                        <img
-                            src={slide.src}
-                            alt={`Slide ${index + 1} Image 1`}
-                            className="carousel-image1"
-                        />
-                        <img
-                            src={slide.src1}
-                            alt={`Slide ${index + 1} Image 2`}
-                            className="carousel-image1"
-                        />
-                        <img
-                            src={slide.src2}
-                            alt={`Slide ${index + 1} Image 3`}
-                            className="carousel-image1"
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
-        </div>
+        <PremiumSection/>
+      </div>
         <div>
                    <div className="first-second-aboutus11">
                     <div >

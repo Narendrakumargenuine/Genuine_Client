@@ -57,7 +57,28 @@
   z-index: 1000; /* Ensure it stays above other elements */
   cursor: pointer; /* Show pointer cursor on hover */
 }
-
+@media (max-width:768px){
+  .location{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid white; */
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+.head-container{
+  display: none;
+}
+.location p {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+.head{
+  display: none;
+}
+}
 .whatsapp-container > i {
   color: white; /* Icon color */
   font-size: 30px; /* Icon size */

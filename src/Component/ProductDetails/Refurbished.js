@@ -25,7 +25,7 @@ import alter3 from "../../Assets/Alternator/images 8.png";
 import frame from "../../Assets/Alternator/Frame 563.png";
 import Service9 from "../../Assets/ServiceImage/Prestolite_Electric_logo.svg 1.png";
 import Contact from "../Contact";
-import PremiumSection from "../PremiumSection";
+import EnquiryModal from "../EnquiryModal.js";
 // import Service0 from "../Assets/ServiceImage/download 6.png";
 // import Service1 from "../Assets/ServiceImage/download 8.png";
 // import Service2 from "../Assets/ServiceImage/download 9.png";
@@ -37,6 +37,14 @@ import PremiumSection from "../PremiumSection";
 // import Service8 from "../Assets/ServiceImage/pngegg (12) 1.png";
 // import Service9 from "../Assets/ServiceImage/Prestolite_Electric_logo.svg 1.png";
 const ProductAndService = () => {
+    const [showEnquiry,setShowEnquiry]= useState(false);
+
+    const handleEnquiry=()=>{
+        setShowEnquiry(!showEnquiry);
+    }
+    const handleCallClick = () => {
+        window.location.href = "tel:+1234567890"; // Replace with your phone number
+      };
   const { productId } = useParams();
   const navigate = useNavigate();
   const isMobile = window.innerWidth <= 768;
@@ -153,15 +161,21 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
+     
+              <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
-                onClick={() => navigate("/product/alternator")}
+                onClick={handleEnquiry}
               >
-                View Details
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
+             
             </div>
           </div>
         </div>
+        {showEnquiry && <EnquiryModal onClose={handleEnquiry}/>}
         {/* second */}
         <div className="productContainer">
           <div className="product">
@@ -200,12 +214,15 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
+              <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
-                onClick={() => navigate("/product/starter")}
+                onClick={handleEnquiry}
               >
-                View Details
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -248,12 +265,15 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
+              <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
-                onClick={() => navigate("/product/wiper")}
+                onClick={handleEnquiry}
               >
-                View Details
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -296,9 +316,15 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
-              <button className="btn" onClick={() => navigate("/product/eps")}>
-                View Details
+              <div style={{display:"flex",gap:"13px"}}>
+              <button
+                className="btn"
+                onClick={handleEnquiry}
+              >
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -340,12 +366,15 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
+              <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
-                onClick={() => navigate("/product/accompressor")}
+                onClick={handleEnquiry}
               >
-                View Details
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -386,12 +415,15 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
+              <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
-                onClick={() => navigate("/product/airsuspension")}
+                onClick={handleEnquiry}
               >
-                View Details
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -434,12 +466,15 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
+              <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
-                onClick={() => navigate("/product/blowermotor")}
+                onClick={handleEnquiry}
               >
-                View Details
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -481,12 +516,15 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
+              <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
-                onClick={() => navigate("/product/liquidcooled")}
+                onClick={handleEnquiry}
               >
-                View Details
+                Enquiry
               </button>
+              <button className="btn" onClick={handleCallClick}>Call now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -497,7 +535,19 @@ const ProductAndService = () => {
           <PremiumService />
         ) : (
           <div className="premium-service">
-           <PremiumSection/>
+            <h1 className="about-h1">
+              A Premium Service Brands for
+              <span className="stroke"> Multibrands</span>
+            </h1>
+            <div className="image-append">
+              {imageData3.map((data) => {
+                return (
+                  <div>
+                    <img src={data} />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         )}
         {/* </div> */}

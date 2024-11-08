@@ -5,7 +5,7 @@ import { IoIosCall } from "react-icons/io";
 import EnquiryModal from "./EnquiryModal";
 import "../Style/Navbar.css";
 import Logo from "../Assets/logo.jpg";
-import BOSCH from "../Assets/bos1.png";
+import BOSCH from "../Assets/bos1.jpg";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -32,7 +32,14 @@ const Navbar = () => {
   };
 
   const mobile = window.innerWidth <= 768;
-
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "1234567890"; // Replace with your desired phone number
+    const message = "Hello! I need some help."; // Optional pre-filled message
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  };
   return (
     <>
       {!mobile ? (
@@ -62,6 +69,9 @@ const Navbar = () => {
                     <p className="contact-link">Contact Us</p>
                   </Link>
                 </div>
+                <div className="whatsapp-container1" onClick={handleWhatsAppClick}>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
               </div>
               <div className="link-container">
                 <Link
@@ -79,10 +89,10 @@ const Navbar = () => {
                   <p>About Us</p>
                 </Link>
                 <Link
-                  to="/productandservice"
-                  onClick={() => handleActiveLink("/productandservice")}
+                  to="/refurbished"
+                  onClick={() => handleActiveLink("/refurbished")}
                   className={
-                    activeLink === "/productandservice" ? "active-link" : ""
+                    activeLink === "/refurbished" ? "active-link" : ""
                   }
                 >
                   <p>Refurbished</p>
@@ -131,6 +141,7 @@ const Navbar = () => {
           </div>
         </div>
       ) : (
+        <>
         <nav className="navbar1">
           <div className="logo">
             <Link to="/">
@@ -200,7 +211,27 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          <div className="call-container" onClick={handleCallClick}>
+                  <i class="fa-solid fa-phone"></i>
+                  </div>
         </nav>
+        <div className="location">
+          <div>
+            <i
+              class="fa-solid fa-location-dot"
+              style={{ color: "#C51212", fontSize: "14px" }}
+            ></i>
+          </div>
+          <div>
+            <Link to={"https://maps.app.goo.gl/kPtAfqa86TrEbmeR8"} target="_blank" className="location-link"><p>5th Cross, LBF Road, Bengaluru-560004</p></Link>
+          </div>
+        </div>
+        <div className="navbar-third-sec">
+            <button onClick={toggleModal} className="enquiry-button">
+              Enquiry Now
+            </button>
+            </div>
+       </>
       )}
 
       {showModal && <EnquiryModal onClose={toggleModal} />}

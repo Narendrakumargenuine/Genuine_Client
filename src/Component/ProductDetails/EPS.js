@@ -27,6 +27,7 @@ import section4 from "../../Assets/EPS/section1.png"
 import Service9 from "../../Assets/ServiceImage/Prestolite_Electric_logo.svg 1.png";
 import PdSlider from './PdSlider';
 import PdContact from "../PdContact";
+import PremiumSection from "../PremiumSection";
 
 const EPS = () => {
   const { productId } = useParams();
@@ -311,32 +312,7 @@ const EPS = () => {
         </div>
       </div>
       <div className="premium-service11">
-        <div className="carousel-container1">
-          <div
-            className="carousel-slides1"
-            style={{ transform: `translateX(${-currentSlide * 100}%)` }}
-          >
-            {slides.map((slide, index) => (
-              <div key={index} className="carousel-item1">
-                <img
-                  src={slide.src}
-                  alt={`Slide ${index + 1} Image 1`}
-                  className="carousel-image1"
-                />
-                <img
-                  src={slide.src1}
-                  alt={`Slide ${index + 1} Image 2`}
-                  className="carousel-image1"
-                />
-                <img
-                  src={slide.src2}
-                  alt={`Slide ${index + 1} Image 3`}
-                  className="carousel-image1"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        <PremiumSection/>
       </div>
       <div>
         <div className="first-second-aboutus11">
@@ -346,7 +322,7 @@ const EPS = () => {
                 width: "80%",
                 margin: "auto",
                 textAlign: "center",
-                marginTop: "-10px",
+                marginTop: "71px",
                 fontSize: "14px",
               }}
             >

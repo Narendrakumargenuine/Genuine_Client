@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../../Style/Premium.css'; // CSS for styling
+import '../../Style/PdSlider.css'; // CSS for styling
 
 
 const PdSlider = ({images}) => {

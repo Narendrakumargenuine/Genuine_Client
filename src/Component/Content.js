@@ -15,6 +15,7 @@ import ProductAndService from "./ProductDetails/ProductandService.js";
 import Faqd from "./Faqd.js";
 import PrivacyPolicy from "./PrivacyPolicy.js";
 import TermAndCondition from "./Terms&Condition.js";
+import Refurbished from "./ProductDetails/Refurbished.js"
 const Content = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const Content = () => {
         <Route path="/faqs" element={<Faqd />} />
         <Route path="/product/alternator" element={<ProductDetails />} />
         <Route path="/productandservice" element={<ProductAndService />} />
+        <Route path="/refurbished" element={<Refurbished />} />
         <Route path="/product/starter" element={<PdStarterMotor />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/termsandcondition" element={<TermAndCondition />} />

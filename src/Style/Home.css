@@ -24,7 +24,6 @@ body {
 }
 
 .about-h1 {
-  margin-top: 30px;
   text-align: center;
   font-size: 28px;
   color: #064c1b;
@@ -177,6 +176,53 @@ body {
   height: 100px;
   width: 120px;
 }
+.first-heading{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+.welcome-serve{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ 
+}
+.pre-section{
+  margin-top: 30px;
+}
+.vertical-text1 {
+  /* Optional: to make it read top to bottom */
+  font-size: 30px; /* Adjust font size as needed */
+}
+.stroke1 {
+  -webkit-text-stroke: 1px green;
+  color: transparent;
+}
+.welcome-image{
+ height: 35px;
+  width: 200px;
+}
+.welcome-image>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.heading-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+  height: 50px;
+  width: 200px;
+}
+.heading-logo>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 /* @media (min-width: 769px) and (max-width: 1268px) {
    
@@ -187,6 +233,15 @@ body {
 /* Responsive Design for Tablets */
 
 @media (max-width: 768px) {
+  .first-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .heading-logo{
+    height: 19px;
+    width: 153px;
+  }
   .navbar {
     background-color: white;
     display: flex;

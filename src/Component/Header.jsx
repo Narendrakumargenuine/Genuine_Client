@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/header.css";
-
+import { Link } from "react-router-dom";
 function header() {
   const facebookId = "yourFacebookPageID"; // Replace with actual Facebook page ID
   const youtubeId = "yourYouTubeChannelID"; // Replace with actual YouTube channel ID
@@ -23,7 +23,7 @@ function header() {
             ></i>
           </div>
           <div>
-            <p>119 S Montclair Ave Brandon, FL 33511</p>
+            <Link to={"https://maps.app.goo.gl/kPtAfqa86TrEbmeR8"} target="_blank"><p>5/9, 5th Cross, LBF Road, Bengaluru-560004</p></Link>
           </div>
         </div>
         <div className="right-sec">

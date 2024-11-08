@@ -73,13 +73,14 @@ const Carousel = () => {
               alt={`Slide ${index + 1}`}
               className="carousel-image112"
             />
-            <div className="carousel-caption112">
+           <div className="carousel-caption112">
               <h1>{slide.name}</h1>
-              {/* <h3>{slide.key}</h3> */}
+            
             </div>
           </div>
         ))}
       </div>
+       
       {/* Uncomment this block if you want navigation buttons */}
       {/* <div className="carousel-controls">
         {slides.map((_, index) => (

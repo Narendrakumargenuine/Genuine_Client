@@ -30,6 +30,7 @@ import Service7 from "../Assets/ServiceImage/pngegg (11) 1.png";
 import Service8 from "../Assets/ServiceImage/pngegg (12) 1.png";
 import Service9 from "../Assets/ServiceImage/Prestolite_Electric_logo.svg 1.png";
 import HeaderCaraousel from "./HeaderCaraousel";
+import PremiumSection from "./PremiumSection";
 const Home = () => {
   const imageData2 = [
     Service0,
@@ -86,7 +87,6 @@ const Home = () => {
       route: "/product/alternator",
     },
     { url: Image2, name: "Blower Motor", route: "/product/blowermotor" },
-    { url: Image6, name: "Wiper Motor", route: "/product/wiper" },
     {
       url: Image7,
       name: "Liquid cooled alternator",
@@ -104,45 +104,58 @@ const Home = () => {
       <HeaderCaraousel/>
   
       <div className="about us">
+        <div>
         <h1 className="about-h1">
-          About <span className="stroke">us</span>
+          About <span className="stroke">GenuineServe</span>
         </h1>
+        <div className="welcome-serve">
+        <h3 className="about-h1">Welcome to Genuine Serve</h3>
+        <div className="welcome-image"><img src={Logo}/></div>
+        
+        </div>
+       
+        </div>
+      
         <p className="welcome det" style={{ marginTop: "20px" }}>
-          Welcome to GenuineServe - Your Premier Auto Electrical Solution
-          ProviderAt Genuine Auto Electrical Service, we specialize in providing
-          premium-quality services for Starter Motors, Alternators, and
-          Automotive Motors. With over 30 years of experience in the industry,
-          we have established a strong reputation for delivering exceptional
-          customer satisfaction and reliable automotive solutions.
+        Genuineserve is a Premium Service Company Specialized in diagnosing & servicing of Starter Motors, Alternators, A/C Compressors, A/C Blower Motors, Fan Motors, Wiper Motors,
+         Air Suspension Compressors, EPS Steering Columns etc..
+        With over 35 years of experience in the industry, we have established a strong reputation for delivering exceptional customer satisfaction and reliable automotive solutions.
         </p>
       </div>
 
       <div className="about us">
-        <h1 className="about-h1">
-          Why Choose Genuine <span className="stroke">Serve ?</span>
+        <div className="first-heading">
+         
+          <h1 className="about-h1">
+          Why Choose Genuine <span>Serve</span>
         </h1>
+         
+      
+        <div className="heading-logo">
+        <img src={Logo}/>
+        <p>?</p>
+        </div>
+         
+        </div>
+       
         <p className="welcome det" style={{ marginTop: "20px" }}>
-          Expertise in Auto Electricals: Our team of professionals is highly
-          skilled in the repair, maintenance, and re-engineering of automotive
-          electrical components. We offer a comprehensive range of services
-          tailored to meet the specific needs of your vehicle.
+        Expertise in Auto Electricals: Our team of professionals are highly skilled in diagnosing & Servicing, of all automotive motors.
+We offer a comprehensive range of services tailored to meet the specific needs of your vehicle. 
+You’ll be hard-pressed to find the same level of expertise that our Service company provide! We have years of experience working on both domestic and import vehicle’s Automotive Motors of all makes and models and can work with you to find cost-effective repair and maintenance alternatives.
+
         </p>
         <p className="welcome det" style={{ marginTop: "20px" }}>
-          Certified Quality Assurance: We adhere to ISO 9001:2015 standards,
-          ensuring that all our services meet the highest levels of quality and
-          reliability.
+        Certified Quality Assurance: We adhere to ISO 9001:2015 standards, ensuring that all our services meet the highest levels of quality and reliability.
+
         </p>
         <p className="welcome det" style={{ marginTop: "20px" }}>
-          State-of-the-Art Facilities: Our in-house facilities are equipped with
-          advanced technology to provide complete service and OE-recon for all
-          automotive parts. Each product undergoes rigorous computerized testing
-          on digital test benches to ensure optimal performance.
+        State-of-the-Art Facilities: Our in-house facilities are equipped with advanced technology to provide complete service and OE-recon for all automotive parts. Each product undergoes rigorous computerized testing on digital test bench to ensure optimal performance.
+
         </p>
         <p className="welcome det" style={{ marginTop: "20px" }}>
-          Multi-Brand Compatibility: We service and provide parts for a wide
-          range of automotive brands, including Bosch, Valeo, Delco Remy, Lucas
-          TVS, Denso, and more. We are also an authorized service center for
-          Bosch, guaranteeing quality and trust.
+        Multi-Brand Compatibility: We service and provide parts for a wide range of automotive brands, including Bosch, SEG, Valeo, Lucas-TVS, Delco Remy, Denso, Mitsubishi  and more. 
+We are also an authorized service center for Bosch, 
+guaranteeing quality and trust.
         </p>
       </div>
       {/* Product Image Appended */}
@@ -171,7 +184,7 @@ const Home = () => {
                 <div className="prod">
                   <img className="pro-img" src={data.url} />
                 </div>
-                <p>{data.name}</p>
+                <p className='vertical-text1 stroke1'>{data.name}</p>
               </div>
             );
           })}
@@ -189,16 +202,10 @@ const Home = () => {
               A Premium Service Brands for
               <span className="stroke"> Multibrands</span>
             </h1>
-            <div className="image-append">
-              {imageData2.map((data) => {
-                return (
-                  <div>
-                    <img src={data} />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+            <div className="pre-section">
+            <PremiumSection/>
+             </div>
+             </div>
         )}
         {/* </div> */}
       </div>
