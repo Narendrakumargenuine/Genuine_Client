@@ -12,7 +12,7 @@ const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
   const handleCallClick = () => {
-    window.location.href = "tel:+1234567890"; // Replace with your phone number
+    window.location.href = "tel:+91 9731303030"; // Replace with your phone number
   };
 
   const handleMenuToggle = () => {
