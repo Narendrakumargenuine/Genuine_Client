@@ -57,7 +57,7 @@ const Navbar = () => {
                   <i class="fa-solid fa-phone"></i>
                   <p className="call" onClick={handleCallClick}>
                     "Call or Text" -{" "}
-                    <span className="number">(813) 684-1556</span>
+                    <span className="number">+91 9731303030</span>
                   </p>
                 </div>
                 <div>
