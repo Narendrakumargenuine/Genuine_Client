@@ -35,10 +35,10 @@ const ProductAndService = () => {
         setShowEnquiry(!showEnquiry);
     }
     const handleCallClick = () => {
-        window.location.href = "tel:+91 9731303030"; // Replace with your phone number
+        window.location.href = "tel:+91 8971137456"; // Replace with your phone number
       };
       const handleWhatsAppClick = () => {
-        const phoneNumber = "1234567890"; // Replace with your desired phone number
+        const phoneNumber = "+918971137456"; // Replace with your desired phone number
         const message = "Hello! I need some help."; // Optional pre-filled message
         window.open(
           `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
