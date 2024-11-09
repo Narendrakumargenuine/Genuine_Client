@@ -211,7 +211,11 @@ const Navbar = () => {
                 </Link>
             </li>
             <li>
-              <button className="enquiry-button" onClick={toggleModal}>
+              <button
+               className={
+                activeLink === "/refurbished" ? "active-link" : "enquiry-button"
+              }
+              onClick={toggleModal}>
                 Enquiry
               </button>
             </li>
