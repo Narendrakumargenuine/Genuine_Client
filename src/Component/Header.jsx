@@ -5,7 +5,7 @@ function header() {
   const facebookId = "yourFacebookPageID"; // Replace with actual Facebook page ID
   const youtubeId = "yourYouTubeChannelID"; // Replace with actual YouTube channel ID
   const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890"; // Replace with your desired phone number
+    const phoneNumber = "+918971137456"; // Replace with your desired phone number
     const message = "Hello! I need some help."; // Optional pre-filled message
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
