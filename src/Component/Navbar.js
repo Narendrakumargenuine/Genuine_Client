@@ -228,7 +228,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div className="call-container" onClick={handleCallClick}>
+          <div className="call-container" onClick={handleCallClick1}>
                   <i class="fa-solid fa-phone"></i>
                   </div>
         </nav>
