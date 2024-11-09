@@ -204,6 +204,19 @@
   cursor: pointer;
   background-color: #094e1f;
 }
+.enquiry-button1 {
+  width: 100%;
+  /* border: 1px solid #094e1f; */
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 0px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #094e1f;
+}
 .cont2222 {
   font-size: 15px;
 }
@@ -298,6 +311,11 @@
   .enquiry-button {
     font-size: 22px;
     color: lightgreen;
+    background-color: #094e1f;
+  }
+  .enquiry-button1 {
+    font-size: 22px;
+    color: #ffff;
     background-color: #094e1f;
   }
   .hamburger {

@@ -150,9 +150,12 @@ const Navbar = () => {
         <>
         <nav className="navbar1">
           <div className="logo">
+          
             <Link to="/">
               <img src={Logo} className="nav-img" alt="Logo" />
             </Link>
+          
+           
           </div>
           <div className="hamburger" onClick={handleMenuToggle}>
             {isMobile ? <FaTimes size={30} /> : <FaBars size={30} />}
@@ -236,6 +239,9 @@ const Navbar = () => {
                   <i class="fa-solid fa-phone"></i>
                   </div>
         </nav>
+        {/* <div className="second-logo">
+              <img src={BOSCH} alt="Logo" />
+            </div> */}
         <div className="location">
           <div>
             <i
@@ -248,7 +254,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-third-sec">
-            <button onClick={toggleModal} className="enquiry-button">
+            <button onClick={toggleModal} className="enquiry-button1">
               Enquiry Now
             </button>
             </div>
