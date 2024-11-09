@@ -5,7 +5,11 @@ import Image3 from "../Assets/CaraouselImage/column.png";
 import Image4 from "../Assets/CaraouselImage/crvstartermotor.png";
 import Image5 from "../Assets/CaraouselImage/electricpower.png";
 import Image6 from "../Assets/CaraouselImage/steeringcolumn.png";
-
+import Image1 from "../Assets/ProductsWeDo/download 2-1.png";
+import Image21 from "../Assets/ProductsWeDo/Group 484.png";
+import Image41 from "../Assets/ProductsWeDo/download 4.png";
+import Image51 from "../Assets/ProductsWeDo/download 5.png";
+import Image7 from "../Assets/ProductsWeDo/images 2.png";
 
 const Carousel = () => {
   // Array of objects holdin image paths and names
@@ -15,6 +19,17 @@ const Carousel = () => {
     { src: Image2, name: "Alternator" },
     { src: Image5, name: "Elecric Power Steering Column" },
     { src: Image6, name: "Steering Column & Shalt" },
+    { src: Image1, name: "Starter Motor", },
+    { src: Image41, name: "AC Compressor", },
+    {
+      src: Image51,
+      name: "Air suspension compressor",
+    },
+    { src: Image21, name: "Blower Motor" },
+    {
+    src: Image7,
+      name: "Liquid cooled alternator",
+    },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,7 +37,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 3000); // 3 seconds interval
+    }, 2000); // 3 seconds interval
 
     return () => clearInterval(interval);
   }, [slides.length]);

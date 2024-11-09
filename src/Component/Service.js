@@ -19,7 +19,7 @@ const Service = ()=>{
                 <div className="first-content-div">
                   <h2 style={{color:"#66425f"}}>01</h2>
                  <p>After removing the Faulty part from The Vehicle call our Helpline Number-
-                 +91 9986179080</p>
+                 +91 8971137456</p>
                  </div>
                <div>
                 <h2 style={{color:"#b90d2e"}}>03</h2>

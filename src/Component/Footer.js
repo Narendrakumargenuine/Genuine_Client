@@ -19,7 +19,7 @@ const Footer = ()=>{
                 </div>
                 <div>
                     <strong>Phone</strong>
-                    <p>+91 998617980, +91 9731303030</p>
+                    <p>+91 998617980, +91 9731303030, +91 8971137456</p>
                 </div>
                 <div>
                     <strong>Mail-Id</strong>
@@ -41,7 +41,7 @@ const Footer = ()=>{
                     </div>
                     <div>
                     
-                    <Link to={"/product/airsuspension"} className="product-service-div"><p>AC Suspension Compressor</p> </Link>
+                    <Link to={"/product/airsuspension"} className="product-service-div"><p>Air Suspension Compressor</p> </Link>
                     <Link to={"/product/blowermotor"} className="product-service-div"> <p>Blower Motor</p> </Link>
                     <Link to={"/product/liquidcooled"} className="product-service-div"> <p>Liquid Cooled Alternator</p> </Link>
                     </div>

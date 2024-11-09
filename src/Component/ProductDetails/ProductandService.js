@@ -18,7 +18,7 @@ import Footer from "../Footer";
 import Image from "../../Assets/ProductsWeDo/download 1.png";
 import Image1 from "../../Assets/ProductsWeDo/download 2-1.png";
 import Image2 from "../../Assets/ProductsWeDo/Group 484.png";
-import Image3 from "../../Assets/ProductsWeDo/download 3.png";
+import Image3 from "../../Assets/CaraouselImage/electricpower.png";
 import Image4 from "../../Assets/ProductsWeDo/download 4.png";
 import Image5 from "../../Assets/ProductsWeDo/download 5.png";
 import Image7 from "../../Assets/ProductsWeDo/images 2.png";
@@ -437,9 +437,19 @@ const ProductAndService = () => {
       <div className="premium-service">
         {/* <div> */}
         {isMobile ? (
+          <>
+             <h1 className="about-h1" style={{marginBottom:"20px"}}>
+            A Premium Service Brand for
+            <span className="stroke"> Multibrands</span>
+          </h1>
           <PremiumService />
+          </>
         ) : (
           <div className="premium-service">
+             <h1 className="about-h1" style={{marginBottom:"20px"}}>
+            A Premium Service Brand for
+            <span className="stroke"> Multibrands</span>
+          </h1>
            <PremiumSection/>
           </div>
         )}

@@ -79,7 +79,7 @@
     width: 100%;
     height: auto; /* Maintain image aspect ratio */
     max-height: 400px; /* Optional: limit the image height */
-    object-fit: cover; /* Cover the area without distortion */
+    object-fit: contain; /* Cover the area without distortion */
   }
   
   /* Caption style */

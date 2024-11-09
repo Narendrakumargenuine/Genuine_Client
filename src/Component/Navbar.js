@@ -14,7 +14,9 @@ const Navbar = () => {
   const handleCallClick = () => {
     window.location.href = "tel:+91 9731303030"; // Replace with your phone number
   };
-
+  const handleCallClick1 = () => {
+    window.location.href = "tel:+91 8971137456"; // Replace with your phone number
+  };
   const handleMenuToggle = () => {
     setIsMobile(!isMobile);
   };
@@ -33,7 +35,7 @@ const Navbar = () => {
 
   const mobile = window.innerWidth <= 768;
   const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890"; // Replace with your desired phone number
+    const phoneNumber = "+918971137456"; // Replace with your desired phone number
     const message = "Hello! I need some help."; // Optional pre-filled message
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
@@ -55,9 +57,13 @@ const Navbar = () => {
               <div className="contact-detail">
                 <div className="call-container">
                   <i class="fa-solid fa-phone"></i>
-                  <p className="call" onClick={handleCallClick}>
-                    "Call or Text" -{" "}
-                    <span className="number">+91 9731303030</span>
+                 
+                  <p className="call">
+                    "Call or Text" -
+                    <div>
+                    <p className="number" onClick={handleCallClick}>+91 9731303030</p>
+                    <p className="number" onClick={handleCallClick1}>+91 8971137456</p>
+                    </div>
                   </p>
                 </div>
                 <div>
@@ -201,7 +207,7 @@ const Navbar = () => {
                     activeLink === "/refurbished" ? "active-link" : ""
                   }
                 >
-                  <p>Refurbished</p>
+                  <p>OE-RECON</p>
                 </Link>
             </li>
             <li>

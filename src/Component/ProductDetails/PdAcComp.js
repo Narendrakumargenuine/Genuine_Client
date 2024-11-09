@@ -4,7 +4,6 @@ import Service1 from "../../Assets/ServiceImage/download 8.png";
 import Service2 from "../../Assets/ServiceImage/download 9.png";
 import Service3 from "../../Assets/ServiceImage/download 10.png";
 import Service4 from "../../Assets/ServiceImage/download 11.png";
-// import Service5 from "../../Assets/ServiceImage/Group 95.png";
 import Service6 from "../../Assets/ServiceImage/IMG-20240813-WA0038.png";
 import Service7 from "../../Assets/ServiceImage/pngegg (11) 1.png";
 import Service8 from "../../Assets/ServiceImage/pngegg (12) 1.png";
