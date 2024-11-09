@@ -61,7 +61,7 @@ const Navbar = () => {
                   <p className="call">
                     "Call or Text" -
                     <div>
-                    <p className="number" onClick={handleCallClick}>+91 9731303030</p>
+              
                     <p className="number" onClick={handleCallClick1}>+91 8971137456</p>
                     </div>
                   </p>
