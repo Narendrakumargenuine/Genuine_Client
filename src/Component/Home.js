@@ -193,7 +193,13 @@ guaranteeing quality and trust.
       <div className="premium-service">
         {/* <div> */}
         {isMobile ? (
+          <>
+           <h1 className="about-h1"  style={{marginBottom:"20px"}}>
+           A Premium Service Brands for
+           <span className="stroke"> Multibrands</span>
+         </h1>
           <PremiumService />
+          </>
         ) : (
           <div className="premium-service">
             <h1 className="about-h1">

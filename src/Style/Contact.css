@@ -124,12 +124,14 @@
       margin-top: 20px;
     }
     .map-here {
+      border: none;
       height: 100%;
       width: 100%;
       background-color: white;
       height: 300px;
       padding-left: 20px;
       padding-right: 20px;
+      margin-top: 20px;
     }
     .first-div {
       border-top-right-radius: 0%;
