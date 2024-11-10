@@ -34,7 +34,7 @@ const FAQs = () => {
 
   return (
     <div id="faq">
-      <h1 id="fa">FAQs</h1>
+      <h1 id="fa" style={{color:"#05456c"}}>FAQs</h1>
       <h1>Frequently Asked Questions</h1>
       <div className="faqDiv">
         <div className="faqlogodiv">

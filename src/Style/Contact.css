@@ -10,6 +10,7 @@
   }
   
   .contact-first-section {
+    background-color: #05456c;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -20,7 +21,7 @@
   .first-div {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #094e1f;
+    background-color: #05456c;
     width: 50%;
     padding: 30px 20px;
   }
@@ -37,7 +38,7 @@
   
   .input-group > input,
   .input-group > textarea {
-    background-color: #094e1f;
+    background-color: #05456c;
     border: 1px solid white;
     border-radius: 5px;
     width: 100%;
@@ -79,7 +80,7 @@
     padding: 15px;
     background-color: white;
     font-size: 20px;
-    color: #094e1f;
+    color: #05456c;
   }
   
   .second-div {
@@ -110,7 +111,7 @@
     outline: none;
     border: none;
     border-radius: 10px;
-    color: green;
+    color: #05456c;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -131,7 +132,7 @@
       height: 300px;
       padding-left: 20px;
       padding-right: 20px;
-      margin-top: 20px;
+      margin-top: 3px;
     }
     .first-div {
       border-top-right-radius: 0%;

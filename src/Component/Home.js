@@ -82,13 +82,13 @@ const Home = () => {
     { url: Image4, name: "AC Compressor", route: "/product/accompressor" },
     {
       url: Image5,
-      name: "Air suspension compressor",
+      name: "Air Suspension Compressor",
       route: "/product/airsuspension",
     },
     { url: Image2, name: "Blower Motor", route: "/product/blowermotor" },
     {
       url: Image7,
-      name: "Liquid cooled alternator",
+      name: "Liquid Cooled Alternator",
       route: "/product/liquidcooled",
     },
   ];
@@ -104,11 +104,13 @@ const Home = () => {
   
       <div className="about us">
         <div>
-        <h1 className="about-h1">
-          About <span className="stroke">Genuine Serve</span>
+        <h1 className="about-h1"   style={{
+           marginTop:"27px",fontSize:"32px",textAlign:"center",color:"#05456c",padding:"0px 9px"
+        }}>
+          About <span>Genuine Serve</span>
         </h1>
         <div className="welcome-serve">
-        <h3 className="about-h1">Welcome to Genuine Serve</h3>
+        <h3 className="about-h1" style={{color:"#05456c"}}>Welcome to </h3>
         <div className="welcome-image"><img src={Logo}/></div>
         
         </div>
@@ -125,8 +127,8 @@ const Home = () => {
       <div className="about us">
         <div className="first-heading">
          
-          <h1 className="about-h1">
-          Why Choose Genuine <span>Serve</span>
+          <h1 className="about-h1" style={{color:"#05456c"}}>
+          Why Choose 
         </h1>
          
       
@@ -158,15 +160,18 @@ guaranteeing quality and trust.
         </p>
       </div>
       {/* Product Image Appended */}
-      <h1 className="about-h1">
-        Products <span className="stroke">we </span>
-        <span className="stroke">do</span>
+      <h1 className="about-h1" style={{fontSize:"32px",marginBottom:"20px",color:"#05456c"}}>
+        Products <span>we </span>
+        <span>do</span>
       </h1>
       <p
+        // marginTop: "-27px",
+        // fontSize: "25px",
+        // text-align: "center"
+        // color: "#000000",
+        // padding: "0px 9px"
         style={{
-          textAlign: "center",
-          color: "#999999",
-          padding: "0px 10px",
+           marginTop:"-27px",fontSize:"25px",textAlign:"center",color:"#000000",padding:"0px 9px"
         }}
       >
         We offer a variety of services for different automotive components
@@ -183,7 +188,7 @@ guaranteeing quality and trust.
                 <div className="prod">
                   <img className="pro-img" src={data.url} />
                 </div>
-                <p className='vertical-text1 stroke1'>{data.name}</p>
+                <p>{data.name}</p>
               </div>
             );
           })}
@@ -195,18 +200,18 @@ guaranteeing quality and trust.
         {/* <div> */}
         {isMobile ? (
           <>
-           <h1 className="about-h1"  style={{marginBottom:"20px"}}>
+           <h1 className="about-h1"  style={{marginBottom:"20px",color:"#05456c"}}>
            A Premium Service Brand for
-           <span className="stroke"> Multibrands</span>
+           <span> Multibrands</span>
          </h1>
           <PremiumService />
           </>
         ) : (
           <div className="premium-service">
-            <h1 className="about-h1">
-              A Premium Service Brand for
-              <span className="stroke"> Multibrands</span>
-            </h1>
+           <h1 className="about-h1"  style={{fontSize:"32px",marginBottom:"20px",color:"#05456c"}}>
+           A Premium Service Brand for
+           <span> Multibrands</span>
+           </h1>
             <div className="pre-section">
             <PremiumSection/>
              </div>

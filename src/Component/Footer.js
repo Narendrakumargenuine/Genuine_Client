@@ -19,10 +19,10 @@ const Footer = ()=>{
                 </div>
                 <div>
                     <strong>Phone</strong>
-                    <p>+91 998617980, +91 9731303030, +91 8971137456</p>
+                    <p>+91 8971137456, +91 9731303030</p>
                 </div>
                 <div>
-                    <strong>Mail-Id</strong>
+                    <strong>Email-ID</strong>
                     <p>genuineautobosch@gmail.com</p>
                 </div>
                </div>

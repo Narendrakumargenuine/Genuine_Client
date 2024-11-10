@@ -54,18 +54,18 @@ const PdAcComp = () => {
       {/* Heading Section */}
     
            <div className="aboutus-border"></div>
-      <h2 className="product-details-heading">Product <span className="stroke">Details</span></h2>
+      <h2 className="product-details-heading">Product <span>Details</span></h2>
       
       {/* Main Content Section */}
       {
         isMobile? <div className="product-details-content">
-           <h1 className='vertical-text stroke'>AC Compressor</h1>
+           <h1 className='vertical-text'>AC Compressor</h1>
            <PdSlider images={imageData}/>
            <h1 style={{textAlign:"center",fontSize:"16px",width:"95%",margin:"auto"}}>Keeping Your Vehicle Cool and Comfortable</h1>
           </div>:
         <div className="product-details-content">
         <div>
-           <h1 className='vertical-text stroke'>AC Compressor</h1>
+           <h1 className='vertical-text'>AC Compressor</h1>
            <div>
             <img src={alter1}/>
            </div>

@@ -88,7 +88,7 @@ const ProductAndService = () => {
       <div>
         <div className="first-second-aboutus11">
           <div>
-            <h1 className="first-h31">Products and Services</h1>
+            <h1 className="first-h31" style={{color:"#05456c"}}>Products and Services</h1>
             <p
               style={{
                 textAlign: "center",
@@ -115,7 +115,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Alternator</h1>
+              <h1 style={{color:"#05456c"}}>Alternator</h1>
               <p>
                 We specialize in providing high-quality alternator repair,
                 maintenance, and re-engineering services for all types of
@@ -127,7 +127,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -145,6 +145,7 @@ const ProductAndService = () => {
               </div>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={() => navigate("/product/alternator")}
               >
                 View Details
@@ -162,7 +163,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Starter Motor</h1>
+              <h1 style={{color:"#05456c"}}>Starter Motor</h1>
               <p>
                 we offer top-notch starter motor repair, replacement, and
                 reconditioning services to ensure your vehicle starts smoothly
@@ -174,7 +175,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -192,6 +193,7 @@ const ProductAndService = () => {
               </div>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={() => navigate("/product/starter")}
               >
                 View Details
@@ -210,7 +212,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>EPS Motor</h1>
+              <h1 style={{color:"#05456c"}}>EPS Motor</h1>
               <p>
                 we specialize in the repair and replacement of Electric Power
                 Steering (EPS) motors, ensuring smooth, effortless steering for
@@ -223,7 +225,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -239,7 +241,7 @@ const ProductAndService = () => {
                   );
                 })}
               </div>
-              <button className="btn" onClick={() => navigate("/product/eps")}>
+              <button className="btn" style={{color:"#05456c"}} onClick={() => navigate("/product/eps")}>
                 View Details
               </button>
             </div>
@@ -255,7 +257,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>AC Compressors</h1>
+              <h1 style={{color:"#05456c"}}>AC Compressors</h1>
               <p>
                 we offer specialized services for AC compressors, ensuring your
                 vehicle’s air conditioning system runs efficiently, providing
@@ -267,7 +269,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -285,6 +287,7 @@ const ProductAndService = () => {
               </div>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={() => navigate("/product/accompressor")}
               >
                 View Details
@@ -302,7 +305,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Air Suspension Compressors</h1>
+              <h1 style={{color:"#05456c"}}>Air Suspension Compressors</h1>
               <p>
                 we provide expert services for air suspension compressors, a
                 critical component in maintaining the comfort and performance of
@@ -313,7 +316,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -331,6 +334,7 @@ const ProductAndService = () => {
               </div>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={() => navigate("/product/airsuspension")}
               >
                 View Details
@@ -348,7 +352,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Blower Motors</h1>
+              <h1 style={{color:"#05456c"}}>Blower Motors</h1>
               <p>
                 we specialize in the repair, maintenance, and replacement of
                 blower motors, an essential component of your vehicle's heating,
@@ -361,7 +365,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -379,6 +383,7 @@ const ProductAndService = () => {
               </div>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={() => navigate("/product/blowermotor")}
               >
                 View Details
@@ -396,7 +401,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Liquid Cooled Alternators</h1>
+              <h1 style={{color:"#05456c"}}>Liquid Cooled Alternators</h1>
               <p>
                 we provide expert repair, maintenance, and replacement services
                 for liquid cooled alternators, a crucial component in modern
@@ -408,7 +413,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -426,6 +431,7 @@ const ProductAndService = () => {
               </div>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={() => navigate("/product/liquidcooled")}
               >
                 View Details
@@ -438,17 +444,17 @@ const ProductAndService = () => {
         {/* <div> */}
         {isMobile ? (
           <>
-             <h1 className="about-h1" style={{marginBottom:"20px"}}>
+             <h1 className="about-h1" style={{marginBottom:"20px",color:"#05456c"}}>
             A Premium Service Brand for
-            <span className="stroke"> Multibrands</span>
+            <span> Multibrands</span>
           </h1>
           <PremiumService />
           </>
         ) : (
           <div className="premium-service">
-             <h1 className="about-h1" style={{marginBottom:"20px"}}>
+             <h1 className="about-h1" style={{marginBottom:"20px",color:"#05456c"}}>
             A Premium Service Brand for
-            <span className="stroke"> Multibrands</span>
+            <span> Multibrands</span>
           </h1>
            <PremiumSection/>
           </div>

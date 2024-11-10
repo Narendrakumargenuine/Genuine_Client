@@ -1,76 +1,59 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../Style/Caraousel.css'; // Import the CSS for styling
-import Image2 from "../Assets/CaraouselImage/alternator.png";
-import Image3 from "../Assets/CaraouselImage/column.png";
-import Image4 from "../Assets/CaraouselImage/crvstartermotor.png";
-import Image5 from "../Assets/CaraouselImage/electricpower.png";
-import Image6 from "../Assets/CaraouselImage/steeringcolumn.png";
-import Image1 from "../Assets/ProductsWeDo/download 2-1.png";
-import Image21 from "../Assets/ProductsWeDo/Group 484.png";
-import Image41 from "../Assets/ProductsWeDo/download 4.png";
-import Image51 from "../Assets/ProductsWeDo/download 5.png";
-import Image7 from "../Assets/ProductsWeDo/images 2.png";
+import alternator from "../Assets/CaraouselImage/alternator.png";
+import ac_compressor from "../Assets/CaraouselImage/ac_compressor.png";
+import air_suspension from "../Assets/CaraouselImage/air_suspension.png";
+import blower_motor from "../Assets/CaraouselImage/blower_motor.png";
+import liquid_cooled from "../Assets/CaraouselImage/liquid_cooled.png";
+import starter_motor from "../Assets/CaraouselImage/starter_motor.png";
+import eps_column from "../Assets/CaraouselImage/eps_column.png";
 
 const Carousel = () => {
-  // Array of objects holdin image paths and names
   const slides = [
-    { src: Image4, name: "CRV Starter Motor" },
-    { src: Image3, name: "Electric Steering Column" },
-    { src: Image2, name: "Alternator" },
-    { src: Image5, name: "Elecric Power Steering Column" },
-    { src: Image6, name: "Steering Column & Shalt" },
-    { src: Image1, name: "Starter Motor", },
-    { src: Image41, name: "AC Compressor", },
+    { src: alternator, name: "Alternator" },
+   
+    { src: starter_motor, name: "Starter Motor", },
+    { src: ac_compressor, name: "AC Compressor", },
     {
-      src: Image51,
-      name: "Air suspension compressor",
+      src: air_suspension,
+      name: "Air Suspension Compressor",
     },
-    { src: Image21, name: "Blower Motor" },
+    { src: blower_motor, name: "Blower Motor" },
     {
-    src: Image7,
-      name: "Liquid cooled alternator",
+    src: liquid_cooled,
+      name: "Liquid Cooled Alternator",
     },
+    {
+    src: eps_column,
+    name: "EPS Column",
+  },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const carouselRef = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 2000); // 3 seconds interval
+    const scrollInterval = setInterval(() => {
+      if (carouselRef.current) {
+        carouselRef.current.scrollLeft += 1; // Controls scrolling speed
+        if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth / 2) {
+          carouselRef.current.scrollLeft = 0; // Reset scroll position for seamless looping
+        }
+      }
+    }, 10); // Adjust for faster/slower scroll speed
 
-    return () => clearInterval(interval);
-  }, [slides.length]);
+    return () => clearInterval(scrollInterval);
+  }, []);
 
   return (
-    <div className="carousel-container">
-      <div
-        className="carousel-slides"
-        style={{ transform: `translateX(${-currentSlide * 100}%)` }}
-      >
-        {slides.map((slide, index) => (
+    <div className="carousel-container" ref={carouselRef}>
+      <div className="carousel-slides">
+        {[...slides, ...slides].map((slide, index) => (
           <div key={index} className="carousel-item">
-            <img
-              src={slide.src}
-              alt={`Slide ${index + 1}`}
-              className="carousel-image"
-            />
+            <img src={slide.src} alt={slide.name} className="carousel-image" />
             <h3 className="carousel-caption">{slide.name}</h3>
           </div>
         ))}
       </div>
-      {/* Uncomment this block if you want navigation buttons */}
-      {/* <div className="carousel-controls">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={index === currentSlide ? 'active' : ''}
-            onClick={() => setCurrentSlide(index)}
-          >
-            {index + 1}
-          </button>
-        ))}
-      </div> */}
     </div>
   );
 };

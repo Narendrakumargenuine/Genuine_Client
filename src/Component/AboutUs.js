@@ -24,14 +24,14 @@ const AboutUs = ()=>{
           <div className="aboutus-border"></div>
             <div className="aboutus-first-container">
             <div className="first-section">
-                <h1>About us</h1>
+                <h1 style={{color:"#05456c"}}>About us</h1>
                 <p>
                 At GenuineServe, our mission is to offer unparalleled auto electrical services that cater to all your vehicle needs. With over three decades of experience, our expert team has built a legacy of excellence, trust, and reliability in the automotive industry. Our passion for innovation and commitment to quality drive us to provide solutions that exceed our customers' expectations.</p>
             </div>
             <div className="first-first-section">
               <div className="first-first-aboutus">
                 <div className="description-aboutus">
-                <h1 className="first-h2">1. Our vision and values</h1>
+                <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1>
                 <p><span style={{fontSize:"13px",fontWeight:"600"}}>Customer-Centric Approach</span> : We place our customers at the heart of everything we do, striving to deliver the highest level of satisfaction.
                 </p>
                 <p><span style={{fontSize:"13px",fontWeight:"600"}}>Innovation and Excellence</span> : We continuously seek to improve our services through innovative practices and cutting-edge technology.</p>
@@ -50,7 +50,7 @@ const AboutUs = ()=>{
               </div>:""}
               <div className="first-second-aboutus">
                     <div >
-                    <h1 className="first-h3">2.Our Expertise</h1>
+                    <h1 className="first-h3"   style={{color:"#05456c"}}>2.Our Expertise</h1>
                     <p style={{textAlign:"center",color:"#8f8989",fontSize:"10px",marginBottom:"10px"}}>Comprehensive Autoelectrical Services</p>
                     </div>
                   <div>
@@ -70,7 +70,8 @@ const AboutUs = ()=>{
 
             <div className="first-third-section">
                 <div className="first-third-first">
-                    <h1 style={{fontSize:"16px",color:"#064c1b"}}>3. Customer Testimonials</h1>
+              
+                    <h1 style={{fontSize:"16px",color:"#05456c"}}>3. Customer Testimonials</h1>
                     <p style={{textAlign:"center",color:"#8f8989",fontSize:"10px",marginBottom:"8px"}}>What Our Client Say About Us</p>
                     <p style={{fontSize:"11px"}}>At GenuineServe, customer satisfaction is our top priority. Here’s what some of our happy clients have to say:</p>
                 </div>

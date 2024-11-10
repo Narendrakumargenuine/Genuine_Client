@@ -20,7 +20,7 @@ const Navbar = () => {
   const handleMenuToggle = () => {
     setIsMobile(!isMobile);
   };
-
+ 
   const closeMobileMenu = () => {
     setIsMobile(false);
   };
@@ -48,37 +48,13 @@ const Navbar = () => {
         <div className="navbar">
           <div className="navbar-first">
             <img src={Logo} className="nav-img" alt="Logo" />
-            <div className="second-logo">
-              <img src={BOSCH} alt="Logo" />
-            </div>
+            <img src={BOSCH} alt="Logo" height={72}/>
+          
           </div>
           <div className="navbar-second">
-            <div>
-              <div className="contact-detail">
-                <div className="call-container">
-                  <i class="fa-solid fa-phone"></i>
-                 
-                  <p className="call">
-                    "Call or Text" -
-                    <div>
-              
-                    <p className="number" onClick={handleCallClick1}>+91 8971137456</p>
-                    </div>
-                  </p>
-                </div>
-                <div>
-                  <Link
-                    to="/contactus"
-                    onClick={() => handleActiveLink("/contactus")}
-                    className={activeLink === "/contactus" ? "active-link" : ""}
-                  >
-                    <p className="contact-link">Contact Us</p>
-                  </Link>
-                </div>
-                <div className="whatsapp-container1" onClick={handleWhatsAppClick}>
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
-              </div>
+         
+            <div style={{marginTop:"-29px"}}>
+            <p className="bosh-navbar">BOSCH Authorised Service Centre</p>
               <div className="link-container">
                 <Link
                   to="/"
@@ -155,7 +131,6 @@ const Navbar = () => {
               <img src={Logo} className="nav-img" alt="Logo" />
             </Link>
           
-           
           </div>
           <div className="hamburger" onClick={handleMenuToggle}>
             {isMobile ? <FaTimes size={30} /> : <FaBars size={30} />}
@@ -213,15 +188,7 @@ const Navbar = () => {
                   <p>OE-RECON</p>
                 </Link>
             </li>
-            <li>
-              <button
-               className={
-                activeLink === "/refurbished" ? "active-link" : "enquiry-button"
-              }
-              onClick={toggleModal}>
-                Enquiry
-              </button>
-            </li>
+         
             <li>
               <Link
                 to="/contactus"
@@ -239,9 +206,10 @@ const Navbar = () => {
                   <i class="fa-solid fa-phone"></i>
                   </div>
         </nav>
-        {/* <div className="second-logo">
+        <div className="second-logo">
               <img src={BOSCH} alt="Logo" />
-            </div> */}
+            </div>
+             <p className="bosh-navbar">BOSCH Authorised Service Centre</p>
         <div className="location">
           <div>
             <i

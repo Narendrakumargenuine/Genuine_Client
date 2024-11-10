@@ -1,11 +1,11 @@
 .head {
-  background: #000;
-  height: 40px;
+  background: #eac830;
+  height: 50px;
   display: flex;
   align-items: center;
 }
 .head-container {
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -13,17 +13,23 @@
   color: white;
 }
 .location {
+  width: 42%;
   display: flex;
   align-items: center;
   /* border: 1px solid white; */
   gap: 10px;
 }
+.conta-header{
+  color: #04476e;
+  text-decoration: none;
+}
 .location p {
-  font-size: 14px;
-  color: white;
+  font-size: 16px;
+  color: #04476e;
   font-weight: 500;
 }
 .right-sec {
+  width: 31%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +37,8 @@
 }
 
 .right-sec p {
-  font-size: 14px;
-  color: white;
+  font-size: 16px;
+  color: #cb3b42;
   font-weight: 500;
 }
 .icon-container {

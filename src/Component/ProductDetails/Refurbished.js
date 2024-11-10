@@ -38,7 +38,7 @@ const ProductAndService = () => {
         window.location.href = "tel:+91 8971137456"; // Replace with your phone number
       };
       const handleWhatsAppClick = () => {
-        const phoneNumber = "+918971137456"; // Replace with your desired phone number
+        const phoneNumber = "+919731303030"; // Replace with your desired phone number
         const message = "Hello! I need some help."; // Optional pre-filled message
         window.open(
           `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
@@ -108,8 +108,8 @@ const ProductAndService = () => {
         <div className="about us">
         <div className="first-heading">
          
-          <h1 className="about-h1">
-          Why Choose Genuine Serve for <span className="stroke">OE-RECON 
+          <h1 className="about-h1" style={{color:"#05456c"}}>
+          Why Choose Genuine Serve for <span>OE-RECON 
           </span>
            ?
         </h1>
@@ -148,13 +148,14 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Alternator</h1>
+              <h1 style={{color:"#05456c"}}>Alternator</h1>
               <p>
               Restoring power generation efficiency and correcting common design issues for dependable performance.
               </p>
               <p
+              
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -173,11 +174,12 @@ const ProductAndService = () => {
               <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={handleEnquiry}
               >
                 Enquiry
               </button>
-              <button className="btn" onClick={handleCallClick}>Call now</button>
+              <button className="btn" onClick={handleCallClick} style={{color:"#05456c"}}>Call now</button>
               <div className="whatsapp-container2" onClick={handleWhatsAppClick}>
         <i class="fa-brands fa-whatsapp"></i>
       </div>
@@ -197,7 +199,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Starter Motor</h1>
+              <h1 style={{color:"#05456c"}}>Starter Motor</h1>
               <p>
               Ensuring reliable ignition power with reconditioned parts designed to last.
             Air Suspension Compressors: Reconditioning compressors to ensure optimal air pressure and handling.
@@ -205,7 +207,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -224,11 +226,12 @@ const ProductAndService = () => {
               <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={handleEnquiry}
               >
                 Enquiry
               </button>
-              <button className="btn" onClick={handleCallClick}>Call now</button>
+              <button className="btn" onClick={handleCallClick} style={{color:"#05456c"}}>Call now</button>
               <div className="whatsapp-container2" onClick={handleWhatsAppClick}>
         <i class="fa-brands fa-whatsapp"></i>
       </div>
@@ -249,13 +252,13 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>EPS Motor</h1>
+              <h1 style={{color:"#05456c"}}>EPS Motor</h1>
               <p>
               Reconditioning for precise, smooth steering and enhanced control.
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -274,11 +277,12 @@ const ProductAndService = () => {
               <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={handleEnquiry}
               >
                 Enquiry
               </button>
-              <button className="btn" onClick={handleCallClick}>Call now</button>
+              <button className="btn" onClick={handleCallClick} style={{color:"#05456c"}}>Call now</button>
               <div className="whatsapp-container2" onClick={handleWhatsAppClick}>
         <i class="fa-brands fa-whatsapp"></i>
       </div>
@@ -298,14 +302,14 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>AC Compressors</h1>
+              <h1 style={{color:"#05456c"}}>AC Compressors</h1>
               <p>
               Delivering cool air on demand with reconditioned parts for optimal cabin comfort.
 
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -325,10 +329,11 @@ const ProductAndService = () => {
               <button
                 className="btn"
                 onClick={handleEnquiry}
+                style={{color:"#05456c"}}
               >
                 Enquiry
               </button>
-              <button className="btn" onClick={handleCallClick}>Call now</button>
+              <button className="btn" onClick={handleCallClick} style={{color:"#05456c"}}>Call now</button>
               <div className="whatsapp-container2" onClick={handleWhatsAppClick}>
         <i class="fa-brands fa-whatsapp"></i>
       </div>
@@ -348,13 +353,13 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Air Suspension Compressors</h1>
+              <h1 style={{color:"#05456c"}}>Air Suspension Compressors</h1>
               <p>
               Reconditioning compressors to ensure optimal air pressure and handling.
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -373,11 +378,12 @@ const ProductAndService = () => {
               <div style={{display:"flex",gap:"13px"}}>
               <button
                 className="btn"
+                style={{color:"#05456c"}}
                 onClick={handleEnquiry}
               >
                 Enquiry
               </button>
-              <button className="btn" onClick={handleCallClick}>Call now</button>
+              <button className="btn" onClick={handleCallClick} style={{color:"#05456c"}}>Call now</button>
               <div className="whatsapp-container2" onClick={handleWhatsAppClick}>
         <i class="fa-brands fa-whatsapp"></i>
       </div>
@@ -397,7 +403,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Blower Motors</h1>
+              <h1 style={{color:"#05456c"}}>Blower Motors</h1>
               <p>
                 we specialize in the repair, maintenance, and replacement of
                 blower motors, an essential component of your vehicle's heating,
@@ -410,7 +416,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -430,10 +436,11 @@ const ProductAndService = () => {
               <button
                 className="btn"
                 onClick={handleEnquiry}
+                style={{color:"#05456c"}}
               >
                 Enquiry
               </button>
-              <button className="btn" onClick={handleCallClick}>Call now</button>
+              <button className="btn" onClick={handleCallClick} style={{color:"#05456c"}}>Call now</button>
               <div className="whatsapp-container2" onClick={handleWhatsAppClick}>
         <i class="fa-brands fa-whatsapp"></i>
       </div>
@@ -453,7 +460,7 @@ const ProductAndService = () => {
               />
             </div>
             <div className="productContent">
-              <h1>Liquid Cooled Alternators</h1>
+              <h1 style={{color:"#05456c"}}>Liquid Cooled Alternators</h1>
               <p>
                 we provide expert repair, maintenance, and replacement services
                 for liquid cooled alternators, a crucial component in modern
@@ -465,7 +472,7 @@ const ProductAndService = () => {
               </p>
               <p
                 style={{
-                  color: "#064c1b",
+                  color: "#05456c",
                   fontSize: "18px",
                   fontWeight: "600",
                 }}
@@ -485,10 +492,11 @@ const ProductAndService = () => {
               <button
                 className="btn"
                 onClick={handleEnquiry}
+                style={{color:"#05456c"}}
               >
                 Enquiry
               </button>
-              <button className="btn" onClick={handleCallClick}>Call now</button>
+              <button className="btn" onClick={handleCallClick} style={{color:"#05456c"}}>Call now</button>
               <div className="whatsapp-container2" onClick={handleWhatsAppClick}>
         <i class="fa-brands fa-whatsapp"></i>
       </div>
@@ -512,9 +520,9 @@ const ProductAndService = () => {
          
         ) : (
           <div className="premium-service">
-              <h1 className="about-h1" style={{marginBottom:"20px"}}>
+              <h1 className="about-h1" style={{marginBottom:"20px",color:"#05456c"}}>
             A Premium Service Brand for
-            <span className="stroke"> Multibrands</span>
+            <span> Multibrands</span>
           </h1>
            <PremiumSection/>
           </div>

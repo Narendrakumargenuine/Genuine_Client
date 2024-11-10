@@ -303,7 +303,7 @@ useEffect(() => {
             )}
           </div>
 
-          <button style={{marginTop:"-20px",backgroundColor:"#064c1b",color:"white"}} className="submitBtn" type="submit" disabled={isSubmitting}>
+          <button style={{marginTop:"-20px",backgroundColor:"#05456c",color:"white"}} className="submitBtn" type="submit" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>
           {message && (
@@ -361,7 +361,7 @@ useEffect(() => {
           </div>
             :
           <div className="second-div">
-        <h1 style={{fontSize:"15px"}}><span style={{fontSize:"13px"}}>A Premium Service Brands for </span>MultiBrands</h1>
+        <h1 style={{fontSize:"20px",color:"#05456c"}}><span style={{fontSize:"20px"}}>A Premium Service Brands for </span>MultiBrands</h1>
         <div>
         {imageData2.map((image, index) => (
               <img key={index} src={image} alt={`Service logo ${index + 1}`} />

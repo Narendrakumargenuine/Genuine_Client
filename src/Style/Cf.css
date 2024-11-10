@@ -11,8 +11,9 @@
 .contact-form h1 {
   font-size: 26px;
   font-weight: 600;
+  margin-bottom: 20px;
   /* text-align: center; */
-  color: #064c1b;
+  color: #05456c;
 }
 
 /* Main content layout */
@@ -23,7 +24,7 @@
   justify-content: space-between;
   padding: 20px 0px;
   height: 300px;
-  background-color: #064c1b;
+  background-color: #05456c;
 }
 
 /* Left section - Contact information */

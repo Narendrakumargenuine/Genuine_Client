@@ -1,122 +1,76 @@
 /* Carousel container */
 .carousel-container {
-    position: relative;
-    width: 1004px; /* Width of the carousel */
-    height: 482px; /* Height of the carousel */
-    overflow: hidden; /* Hide overflowing slides */
-    margin: 0 auto; /* Center the carousel */
-    margin-top: 60px;
+  position: relative;
+  width: 100%; /* Full width of the screen */
+  height: 482px; /* Height of the carousel */
+  overflow: hidden; /* Hide overflowing slides */
+  margin: 0 auto; /* Center the carousel */
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* Carousel slides wrapper */
+.carousel-slides {
+  display: flex; /* Display slides in a row */
+  width: calc(200%); /* Double width to fit duplicated slides */
+  transition: none; /* Disable transition for continuous scroll */
+}
+
+/* Individual slide item */
+.carousel-item {
+  width: 75%; /* Each item takes full carousel width */
+  flex-shrink: 0; /* Prevent slides from shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual slide image */
+.carousel-image {
+  width: 100%;
+  height: auto; /* Maintain image aspect ratio */
+  max-height: 400px;
+  object-fit: contain; /* Cover the area without distortion */
+}
+
+/* Caption style */
+.carousel-caption {
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 1024px) {
+  .carousel-container {
+    height: auto;
   }
-  
-  /* Carousel slides wrapper */
-  .carousel-slides {
-    display: flex; /* Display slides in a row */
-    width: 100%; /* Full width of the carousel */
-    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 300px;
   }
-  
-  /* Individual slide item */
-  .carousel-item {
-    width: 100%; /* Each item takes the full width of the carousel */
-    flex-shrink: 0; /* Prevent slides from shrinking */
-    display: flex; /* Align content within the slide */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Individual slide image */
+
   .carousel-image {
-    width: 100%;
-    height: auto; /* Maintain image aspect ratio */
-    max-height: 400px; /* Optional: limit the image height */
-    object-fit: cover; /* Cover the area without distortion */
+    max-height: 250px;
   }
-  
-  /* Caption style */
+
   .carousel-caption {
-    margin-top: 10px; /* Space between image and caption */
-    text-align: center;
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1em;
   }
+}
 
-
-
-  /* Responsive CSS */
-
-
-
-  
-  @media (max-width: 1024px) {
-    /* For tablets and smaller screens */
-    .carousel-container {
-      width: 90%; /* Reduce width to fit tablet screens */
-      height: auto; /* Allow height to adjust dynamically */
-    }
-  }
-  
-  /* Carousel slides wrapper */
-  .carousel-slides {
-    display: flex; /* Display slides in a row */
-    width: 100%; /* Full width of the carousel */
-    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
-  }
-  
-  /* Individual slide item */
-  .carousel-item {
-    width: 100%; /* Each item takes the full width of the carousel */
-    flex-shrink: 0; /* Prevent slides from shrinking */
-    display: flex; /* Align content within the slide */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Individual slide image */
+@media (max-width: 480px) {
   .carousel-image {
-    width: 100%;
-    height: auto; /* Maintain image aspect ratio */
-    max-height: 400px; /* Optional: limit the image height */
-    object-fit: contain; /* Cover the area without distortion */
+    max-height: 200px;
   }
-  
-  /* Caption style */
+
   .carousel-caption {
-    margin-top: 10px; /* Space between image and caption */
-    text-align: center;
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 0.9em;
   }
-  
-  /* Responsive Styles for Mobile and Tablet */
-  @media (max-width: 768px) {
-    /* For mobile devices */
-    .carousel-container {
-      width: 100%; /* Full width for mobile */
-      height: auto; /* Dynamic height */
-    }
-    
-    .carousel-image {
-      max-height: 250px; /* Limit image height on mobile */
-    }
-  
-    .carousel-caption {
-      font-size: 1em; /* Reduce font size for captions */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    /* For very small mobile screens */
-    .carousel-image {
-      max-height: 200px; /* Further limit image height */
-    }
-  
-    .carousel-caption {
-      font-size: 0.9em; /* Smaller caption text for compact devices */
-    }
-  }
-  
-  
+}
