@@ -5,8 +5,8 @@
   height: 482px; /* Height of the carousel */
   overflow: hidden; /* Hide overflowing slides */
   margin: 0 auto; /* Center the carousel */
-  margin-top: 60px;
   display: flex;
+  margin-top: 60px;
   align-items: center;
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "../Style/HeaderCara.css";
 import Image1 from "../Assets/HeaderCaraousel/a_cfanmotor.png";
 import Image2 from "../Assets/HeaderCaraousel/ac_blower.png";
@@ -11,44 +11,117 @@ import Image8 from "../Assets/HeaderCaraousel/starter_motor.png";
 
 const Carousel = () => {
   const slides = [
-    { src: Image7, name: "Blower Motor", key: "Efficient Climate Control for a Comfortable Ride" },
-    { src: Image2, name: "Alternator", key: "Reliable Power for Your Vehicle" },
-    { src: Image3, name: "Starter Motor", key: "Reliable Engine Ignition for Every Drive" },
-    { src: Image4, name: "Air Suspension Compressor", key: "Smooth Rides with Precision Control" },
-    { src: Image5, name: "EPS Motor", key: "Precision Control for Effortless Steering" },
-    { src: Image6, name: "Liquid Cooled Alternator", key: "High Efficiency for High-Performance Vehicle" },
-    { src: Image1, name: "Wiper Motor", key: "Clear Visibility, No Matter the Weather" },
-    { src: Image8, name: "AC Compressor", key: "Keeping Your Vehicle Cool and Comfortable" },
+    { src: Image7, name: "Blower Motor", key: "Efficient Climate Control" },
+    { src: Image2, name: "Alternator", key: "Reliable Power for Vehicle" },
+    { src: Image3, name: "Starter Motor", key: "Reliable Engine Ignition" },
+    { src: Image4, name: "Air Suspension Compressor", key: "Smooth Rides" },
+    { src: Image5, name: "EPS Motor", key: "Effortless Steering" },
+    { src: Image6, name: "Liquid Cooled Alternator", key: "High Efficiency" },
+    { src: Image1, name: "Wiper Motor", key: "Clear Visibility" },
+    { src: Image8, name: "AC Compressor", key: "Comfortable Cooling" },
   ];
 
-  const carouselRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0); // State to track the current slide
 
   useEffect(() => {
-    const scrollInterval = setInterval(() => {
-      if (carouselRef.current) {
-        // Move to the right
-        carouselRef.current.scrollLeft += 1;
-        // Check if it's at the end
-        if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth / 2) {
-          carouselRef.current.scrollLeft = 0;
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => {
+        // If we are at the last image, we just stay at the last one
+        if (prevSlide === slides.length - 1) {
+          return 0;
         }
-      }
-    }, 10); // Adjust speed here (smaller = faster)
+        return prevSlide + 1; // Otherwise, go to the next slide
+      });
+    }, 3000); // Change slide every 3 seconds
 
-    return () => clearInterval(scrollInterval);
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="carousel-container222" ref={carouselRef}>
-      <div className="carousel-slides112">
-        {[...slides, ...slides].map((slide, index) => (
-          <div key={index} className="carousel-item112">
-            <img src={slide.src} alt={slide.name} className="carousel-image112" />
+    <div className="carousel-container222">
+      <div
+        className="carousel-slides112"
+      >
+      <div className="carousel-item112">
+            <img
+              src={Image7}
+              className="carousel-image112"
+            />
             <div className="carousel-caption112">
-              <h1>{slide.name}</h1>
+              <h1>Blower Motor</h1>
             </div>
           </div>
-        ))}
+          <div className="carousel-item112">
+            <img
+              src={Image2}
+              className="carousel-image112"
+            />
+            <div className="carousel-caption112">
+              <h1>Alternator</h1>
+            </div>
+          </div>
+          <div className="carousel-item112">
+            <img
+              src={Image3}
+              className="carousel-image112"
+            />
+            <div className="carousel-caption112">
+              <h1>Starter Motor</h1>
+            </div>
+          </div>
+
+          <div className="carousel-item112">
+            <img
+              src={Image1}
+              className="carousel-image112"
+            />
+            <div className="carousel-caption112">
+              <h1>Wiper Motor</h1>
+            </div>
+          </div>
+
+
+          <div className="carousel-item112">
+            <img
+              src={Image4}
+              className="carousel-image112"
+            />
+            <div className="carousel-caption112">
+              <h1>Air Suspension Compressor</h1>
+            </div>
+          </div>
+
+
+          <div className="carousel-item112">
+            <img
+              src={Image5}
+              className="carousel-image112"
+            />
+            <div className="carousel-caption112">
+              <h1>EPS Motor</h1>
+            </div>
+          </div>
+
+
+          <div className="carousel-item112">
+            <img
+              src={Image6}
+              className="carousel-image112"
+            />
+            <div className="carousel-caption112">
+              <h1>Liquid Cooled Alternator</h1>
+            </div>
+          </div>
+
+          <div className="carousel-item112">
+            <img
+              src={Image8}
+              className="carousel-image112"
+            />
+            <div className="carousel-caption112">
+              <h1>AC Compressor</h1>
+            </div>
+          </div>
       </div>
     </div>
   );
