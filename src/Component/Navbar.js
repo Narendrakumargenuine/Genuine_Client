@@ -211,7 +211,7 @@ const Navbar = () => {
             </div>
              <p className="bosh-navbar">BOSCH Authorised Service Centre</p>
         <div className="location">
-          <div>
+          <div className="loc-div">
             <i
               class="fa-solid fa-location-dot"
               style={{ color: "#C51212", fontSize: "14px" }}

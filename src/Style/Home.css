@@ -255,8 +255,9 @@ body {
 
 @media (max-width: 768px) {
   .welcome-image{
-    height: 35px;
-    width: 335px;
+    margin-top: -2px;
+    height: 25px;
+    width: 100%;
   }
   .h-p1{
     margin-top: -18px;
@@ -273,7 +274,7 @@ body {
   }
   .about-ho1 {
     text-align: center;
-    font-size: 29px;
+    font-size: 26px;
     padding:0px 9px;
     color: #05456c;
     font-weight: bold;
@@ -287,18 +288,18 @@ body {
    
   }
   .welcome-serve>h3{
-    font-size: 24px;
-    width: 92%;
+    font-size: 22px;
+    width: 100%;
   }
   .first-heading{
     display: flex;
     /* flex-direction: column; */
     gap: 5px;
   }
-  .heading-logo{
-    height: 26px;
-    width: 170px;
-  }
+  .heading-logo {
+    height: 25px;
+    width: 100%;
+}
   .navbar {
     background-color: white;
     display: flex;
@@ -314,8 +315,9 @@ body {
     font-size: 14px;
   }
   .about-h1 {
-    font-size: 22px;
-  }
+    width: 100%;
+    font-size: 20px;
+}
 
   .product-sample {
     width: 100%;
