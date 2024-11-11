@@ -1,64 +1,56 @@
-.carousel-container222 {
+/* CarouselComponent.css */
+
+.custom-carousel {
+  position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+.carousel-inner {
   display: flex;
-  justify-content: center;
+  transition: transform 1s ease-in-out;
 }
 
-.carousel-slides112 {
-  display: flex;
-  flex-wrap: nowrap;
-  animation: scroll 20s linear infinite; /* Smooth transition for left-to-right sliding */
+.carousel-item {
+  min-width: 100%;
+  transition: transform 1s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.carousel-item112 {
-  flex: 0 0 auto;
-  width: 100%;
-  margin-right: 10px;
+.carousel-item.active {
+  opacity: 1;
+  position: relative;
 }
 
-.carousel-image112 {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover; /* Ensure images fill the container */
+.carousel-item.slide-left-to-right {
+  animation: slideLeftToRight 1s forwards;
 }
-
+.d-block {
+  height: 500px;
+}
 .carousel-caption112 {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 20px 40px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: left;
 }
-
-.carousel-caption112 h1 {
-  font-size: 2em; /* Font size for the slide title */
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(-800%);
+@keyframes slideLeftToRight {
+  from {
+    transform: translateX(-100%);
   }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@media (max-width: 1024px) {
-  .carousel-container222 {
-    height: 400px; /* Adjust height for tablet devices */
-  }
-  .carousel-caption112 h1 {
-    font-size: 1.3em; /* Smaller font size for medium screens */
+  to {
+    transform: translateX(0);
   }
 }
 
-@media (max-width: 768px) {
-  .carousel-container222 {
-    height: 300px; /* Adjust height for smaller screens */
-  }
-  .carousel-caption112 h1 {
-    font-size: 1.2em; /* Smaller font size for small screens */
+@media (max-width:768px){
+  .d-block {
+    height: 400px;
   }
 }

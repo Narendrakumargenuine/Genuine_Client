@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Style/Caraousel.css'; // Import the CSS for styling
 import alternator from "../Assets/CaraouselImage/alternator.png";
 import ac_compressor from "../Assets/CaraouselImage/ac_compressor.png";
@@ -9,6 +9,8 @@ import starter_motor from "../Assets/CaraouselImage/starter_motor.png";
 import eps_column from "../Assets/CaraouselImage/eps_column.png";
 
 const Carousel = () => {
+  const [index, setIndex] = useState(0);
+
   const slides = [
     { src: alternator, name: "Alternator" },
    
@@ -29,32 +31,33 @@ const Carousel = () => {
   },
   ];
 
-  const carouselRef = useRef(null);
+
 
   useEffect(() => {
-    const scrollInterval = setInterval(() => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollLeft += 1; // Controls scrolling speed
-        if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth / 2) {
-          carouselRef.current.scrollLeft = 0; // Reset scroll position for seamless looping
-        }
-      }
-    }, 10); // Adjust for faster/slower scroll speed
-
-    return () => clearInterval(scrollInterval);
-  }, []);
+    const intervalId = setInterval(() => {
+      setIndex(prevIndex => (prevIndex + 1) % slides.length);
+    },5000); // 5000 ms = 5 seconds
+    return () => clearInterval(intervalId);
+  }, [slides.length]);
 
   return (
-    <div className="carousel-container" ref={carouselRef}>
-      <div className="carousel-slides">
-        {[...slides, ...slides].map((slide, index) => (
-          <div key={index} className="carousel-item">
-            <img src={slide.src} alt={slide.name} className="carousel-image" />
-            <h3 className="carousel-caption">{slide.name}</h3>
+    <div className="custom-carousel">
+    <div className="carousel-inner">
+      {slides.map((image, idx) => (
+        <div
+          key={idx}
+          className={`carousel-item ${idx === index ? "active" : ""} ${
+            idx === index ? "slide-left-to-right" : ""
+          }`}
+        >
+          <img className="d-block w-100" src={image.src} alt={`Slide ${idx + 1}`}  />
+          <div className="carousel-caption112">
+            <h1>{image.name}</h1>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
+  </div>
   );
 };
 

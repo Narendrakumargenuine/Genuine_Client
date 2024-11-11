@@ -16,7 +16,7 @@ const PrivacyPolicy = ()=>{
             <div className="aboutus-border"></div>
               <div className="first-section">
                 <div>
-              <h1 className="f-h1">Privacy <span className="stroke">Policy</span></h1>
+              <h1 className="f-h1" style={{color:"#05456c"}}>Privacy <span>Policy</span></h1>
               <p style={{fontSize:"12px"}}>
                Last Updated 28/10/2024
               </p>
@@ -30,7 +30,7 @@ const PrivacyPolicy = ()=>{
                <div className="privacy-first-cont">
                 <div className="privacy-first-first">
                     <div>
-                <TbMessageReportFilled style={{fontSize:"30px",color:"#064c1b"}}/>
+                <TbMessageReportFilled style={{fontSize:"30px",color:"#05456c"}}/>
                 </div>
                 <div>
                   <h1 className="p-h1">1. Information we collect</h1>
@@ -46,7 +46,7 @@ const PrivacyPolicy = ()=>{
               
                <div className="privacy-first-second">
                 <div>
-               <IoMdInformationCircleOutline style={{fontSize:"30px",color:"#064c1b"}}/>
+               <IoMdInformationCircleOutline style={{fontSize:"30px",color:"#05456c"}}/>
                </div>
                <div>
                 <h1 className="p-h1">2. How We Use Your Informationt</h1>
@@ -61,7 +61,7 @@ const PrivacyPolicy = ()=>{
 
                 <div className="privacy-first-first">
                     <div>
-                    <SiWondersharefilmora style={{fontSize:"30px",color:"#064c1b"}}/>
+                    <SiWondersharefilmora style={{fontSize:"30px",color:"#05456c"}}/>
                 </div>
                 <div>
                
@@ -80,7 +80,7 @@ const PrivacyPolicy = ()=>{
               
                <div className="privacy-first-second">
                 <div>
-                <FaCookieBite style={{fontSize:"30px",color:"#064c1b"}}/>
+                <FaCookieBite style={{fontSize:"30px",color:"#05456c"}}/>
                </div>
                <div>
                 <h1 className="p-h1">4. Cookies and Tracking</h1>
@@ -94,7 +94,7 @@ const PrivacyPolicy = ()=>{
 
                 <div className="privacy-first-second">
                 <div>
-                <FaDatabase style={{fontSize:"30px",color:"#064c1b"}}/>
+                <FaDatabase style={{fontSize:"30px",color:"#05456c"}}/>
                </div>
                <div>
                 <h1 className="p-h1">5. Data Security</h1>
@@ -108,7 +108,7 @@ const PrivacyPolicy = ()=>{
 
                 <div className="privacy-first-first">
                     <div>
-                    <IoHandRightSharp style={{fontSize:"30px",color:"#064c1b"}}/>
+                    <IoHandRightSharp style={{fontSize:"30px",color:"#05456c"}}/>
                 </div>
                 <div>
                
@@ -126,7 +126,7 @@ const PrivacyPolicy = ()=>{
 
                 <div className="privacy-first-second">
                 <div>
-                <RiLinksLine style={{fontSize:"30px",color:"#064c1b"}}/>
+                <RiLinksLine style={{fontSize:"30px",color:"#05456c"}}/>
                </div>
                <div>
                
@@ -142,7 +142,7 @@ const PrivacyPolicy = ()=>{
 
                 <div className="privacy-first-second">
                 <div>
-                <MdPrivacyTip  style={{fontSize:"30px",color:"#064c1b"}}/>
+                <MdPrivacyTip  style={{fontSize:"30px",color:"#05456c"}}/>
                </div>
                <div>
                 <h1 className="p-h1">8. Changes to Our Privacy Policy</h1>
@@ -156,7 +156,7 @@ const PrivacyPolicy = ()=>{
                 </div>
               </div>
               
-              <h1 style={{textAlign:"center",color:"#064c1b",marginTop:"20px"}}>Contact <span style={{"-webkit-text-stroke":"1px green",color:"transparent"}}>Us</span></h1>
+              <h1 style={{textAlign:"center",color:"#05456c",marginTop:"20px"}}>Contact <span>Us</span></h1>
           
            <div className="contact-details">
             <p style={{fontSize:"14px",fontWeight:"600"}}>For questions or concerns about this Privacy Policy, please contact us:

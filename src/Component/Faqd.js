@@ -214,7 +214,7 @@ const Faqd = ()=>{
         <div className="faqd-main-container">
             <div className="aboutus-border"></div>
             <div className="fa-first-cont">
-                <h1 className="first-heading">FAQ<span style={{"-webkit-text-stroke":"1px green", color: "transparent"}}>s</span></h1>
+                <h1 className="first-heading" style={{color:"#05456c"}}>FAQs</h1>
                 <p style={{textAlign:"center",marginTop:"-40px"}}>Frequently Asked Questions</p>
                 <img src={faqlogo} height={200} width={140}/>
            </div>

@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <>
       {!mobile ? (
-        <div className="navbar">
+        <div className="navbar4">
           <div className="navbar-first">
             <img src={Logo} className="nav-img" alt="Logo" />
             <img src={BOSCH} alt="Logo" height={72}/>

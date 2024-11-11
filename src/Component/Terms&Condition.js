@@ -10,7 +10,7 @@ const TermAndCondition = ()=>{
               <div className="aboutus-border"></div>
              <div className="first-section">
                 <div>
-              <h1 className="f-h1">Terms of <span className="stroke">Service</span></h1>
+              <h1 className="f-h1" style={{color:"#05456c"}}>Terms of <span>Service</span></h1>
               <p style={{fontSize:"12px"}}>
                Last Updated 28/10/2024
               </p>
@@ -103,7 +103,7 @@ const TermAndCondition = ()=>{
                 </div>
               </div>
 
-              <h1 style={{textAlign:"center",color:"#064c1b",marginTop:"20px"}}>Contact <span style={{"-webkit-text-stroke":"1px green",color:"transparent"}}>Us</span></h1>
+              <h1 style={{textAlign:"center",color:"#05456c",marginTop:"20px"}}>Contact <span>Us</span></h1>
           
           <div className="contact-details">
            <p style={{fontSize:"14px",fontWeight:"600"}}>For questions or concerns about this Privacy Policy, please contact us:

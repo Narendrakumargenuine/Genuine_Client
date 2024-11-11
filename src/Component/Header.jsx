@@ -29,7 +29,7 @@ function Header() {
           <div>
             <i
               class="fa-solid fa-location-dot"
-              style={{ color: "#C51212", fontSize: "24px" }}
+              style={{ color: "#C51212", fontSize: "24px",marginBottom:"11px" }}
             ></i>
           </div>
           <div>
