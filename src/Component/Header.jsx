@@ -39,14 +39,20 @@ function Header() {
         <div className="contact-detail">
                 <div className="call-container">
                   <i class="fa-solid fa-phone"></i>
-                 
-                  <p className="call">
-                    "Call or Text" -
-                    <div>
-              
-                    <p className="number" onClick={handleCallClick1}>+91 8971137456</p>
-                    </div>
+                 <div className="call">
+                  <div>
+                  <p >
+                  "Call or Text" -
                   </p>
+                  </div>
+                  <div>
+              
+              <p className="number" onClick={handleCallClick1}>+91 8971137456</p>
+              </div>
+                 </div>
+                
+                   
+                 
                 </div>
                 <div>
                   <Link

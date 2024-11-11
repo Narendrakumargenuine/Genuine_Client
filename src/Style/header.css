@@ -42,6 +42,7 @@
   font-weight: 500;
 }
 .icon-container {
+  margin-top: -13px;
   cursor: pointer;
 }
 .icon-container a {

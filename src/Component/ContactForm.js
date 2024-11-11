@@ -331,7 +331,7 @@ useEffect(() => {
             <div className="second-div22">
           <div className="carousel-container1">
               <h1 className="about-h1" style={{fontSize:"18px",marginTop:"45px"}}>
-                 A Premium Service Brands for Multibrands 
+                 A Premium Service Brand for Multibrands 
                  </h1>
             <div
                 className="carousel-slides1"

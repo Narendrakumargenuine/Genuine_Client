@@ -26,7 +26,7 @@ body {
 .about-h1 {
   text-align: center;
   font-size: 28px;
-  color: #064c1b;
+  color: #05456c;
   font-weight: bold;
 }
 .stroke {
@@ -203,9 +203,8 @@ body {
   color: transparent;
 }
 .welcome-image{
-  margin-top: 8px;
   height: 35px;
-  width: 265px;
+  width: 300px;
 }
 .welcome-image>img{
   width: 100%;
@@ -217,7 +216,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 7px;
   height: 50px;
   width: 265px;
 }
@@ -236,6 +234,17 @@ body {
 /* Responsive Design for Tablets */
 
 @media (max-width: 768px) {
+  .welcome-serve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+   
+  }
+  .welcome-serve>h3{
+    font-size: 24px;
+    width: 75%;
+  }
   .first-heading{
     display: flex;
     flex-direction: column;

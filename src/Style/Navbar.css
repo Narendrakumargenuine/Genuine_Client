@@ -73,7 +73,7 @@
   border-radius: 4px;
   color: white;
   font-size: 15px;
-  margin-top: -30px;
+  margin-top: -13px;
 }
 .link-container {
   display: flex;
@@ -174,7 +174,7 @@ font-size: 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
  /* Ensure it stays above other elements */
   cursor: pointer; /* Show pointer cursor on hover */
-  margin-top: -27px;
+  margin-top: -13px;
 }
 .whatsapp-container1 > i {
   color: white; /* Icon color */

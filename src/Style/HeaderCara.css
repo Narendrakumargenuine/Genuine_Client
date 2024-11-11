@@ -28,9 +28,11 @@
 .carousel-item.slide-left-to-right {
   animation: slideLeftToRight 1s forwards;
 }
+
 .d-block {
   height: 500px;
 }
+
 .carousel-caption112 {
   position: absolute;
   bottom: 0;
@@ -39,13 +41,34 @@
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: left;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.carousel-item.active .carousel-caption112 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideUpFromBottom 1s forwards;
+}
+
 @keyframes slideLeftToRight {
   from {
     transform: translateX(-100%);
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideUpFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

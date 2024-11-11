@@ -511,9 +511,9 @@ const ProductAndService = () => {
         {/* <div> */}
         {isMobile ? (
           <>
-            <h1 className="about-h1" style={{marginBottom:"20px"}}>
+            <h1 className="about-h1" style={{marginBottom:"20px",color:"#05456c"}}>
             A Premium Service Brand for
-            <span className="stroke"> Multibrands</span>
+            <span> Multibrands</span>
           </h1>
           <PremiumService />
           </>

@@ -105,7 +105,7 @@ const Home = () => {
       <div className="about us">
         <div>
         <h1 className="about-h1"   style={{
-           marginTop:"27px",fontSize:"32px",textAlign:"center",color:"#05456c",padding:"0px 9px"
+           marginTop:"27px",fontSize:"32px",textAlign:"center",padding:"0px 9px"
         }}>
           About <span>Genuine Serve</span>
         </h1>

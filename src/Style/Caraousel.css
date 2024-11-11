@@ -1,76 +1,77 @@
-/* Carousel container */
-.carousel-container {
-  position: relative;
-  width: 100%; /* Full width of the screen */
-  height: 482px; /* Height of the carousel */
-  overflow: hidden; /* Hide overflowing slides */
-  margin: 0 auto; /* Center the carousel */
-  display: flex;
-  margin-top: 60px;
-  align-items: center;
-}
-
-/* Carousel slides wrapper */
-.carousel-slides {
-  display: flex; /* Display slides in a row */
-  width: calc(200%); /* Double width to fit duplicated slides */
-  transition: none; /* Disable transition for continuous scroll */
-}
-
-/* Individual slide item */
-.carousel-item {
-  width: 75%; /* Each item takes full carousel width */
-  flex-shrink: 0; /* Prevent slides from shrinking */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Individual slide image */
-.carousel-image {
+/* Carousel Container */
+.carousel-container2223 {
   width: 100%;
-  height: auto; /* Maintain image aspect ratio */
-  max-height: 400px;
-  object-fit: contain; /* Cover the area without distortion */
+  height: 400px;
+  overflow: hidden; /* Hide the overflowing slides */
+  position: relative;
 }
 
-/* Caption style */
-.carousel-caption {
-  margin-top: 10px;
+/* Wrapper for the slides */
+.carousel-slides1123 {
+  margin-top: 50px;
+  display: flex; /* Align slides in a row */
+  height: 100%;
+  animation: slideAnimation 23s infinite; /* Apply animation with 35s duration and infinite loop */
+}
+
+/* Keyframes for sliding the slides from left to right */
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0%); /* Start from the first slide */
+  }
+  12.5% {
+    transform: translateX(-700%); /* Move to the second slide */
+  }
+  25% {
+    transform: translateX(-600%); /* Move to the third slide */
+  }
+  37.5% {
+    transform: translateX(-500%); /* Move to the fourth slide */
+  }
+  50% {
+    transform: translateX(-400%); /* Move to the fifth slide */
+  }
+  62.5% {
+    transform: translateX(-300%); /* Move to the sixth slide */
+  }
+  75% {
+    transform: translateX(-200%); /* Move to the seventh slide */
+  }
+  87.5% {
+    transform: translateX(-100%); /* Return to the first slide */
+  }
+  100% {
+    transform: translateX(0%); /* Reset to the first slide */
+  }
+}
+
+/* Individual Slide */
+.carousel-item1123 {
+  min-width: 100%; /* Each slide takes full container width */
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image Styling */
+.carousel-image1123 {
+  width: 100%;
+  height: 300px;
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Caption Styling */
+.carousel-caption1123 {
   text-align: center;
-  color: #333;
-  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.carousel-caption1123 h1 {
+  font-size: 1.5rem;
   font-weight: bold;
-}
-
-/* Responsive styles for different screen sizes */
-@media (max-width: 1024px) {
-  .carousel-container {
-    height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-container {
-    height: 300px;
-  }
-
-  .carousel-image {
-    max-height: 250px;
-  }
-
-  .carousel-caption {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-image {
-    max-height: 200px;
-  }
-
-  .carousel-caption {
-    font-size: 0.9em;
-  }
+  color: #333;
+  margin: 0;
 }
