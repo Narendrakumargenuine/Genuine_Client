@@ -104,9 +104,7 @@ const Home = () => {
   
       <div className="about us">
         <div>
-        <h1 className="about-h1"   style={{
-           marginTop:"27px",fontSize:"32px",textAlign:"center",padding:"0px 9px"
-        }}>
+        <h1 className="about-ho1">
           About <span>Genuine Serve</span>
         </h1>
         <div className="welcome-serve">
@@ -133,8 +131,8 @@ const Home = () => {
          
       
         <div className="heading-logo">
-        <img src={Logo}/>
-        <p>?</p>
+        <img src={Logo} height={100}/>
+        <p style={{color:"#05456c",marginTop:"13px"}}>?</p>
         </div>
          
         </div>
@@ -160,7 +158,7 @@ guaranteeing quality and trust.
         </p>
       </div>
       {/* Product Image Appended */}
-      <h1 className="about-h1" style={{fontSize:"32px",marginBottom:"20px",color:"#05456c"}}>
+      <h1 className="about-hp1">
         Products <span>we </span>
         <span>do</span>
       </h1>
@@ -170,9 +168,8 @@ guaranteeing quality and trust.
         // text-align: "center"
         // color: "#000000",
         // padding: "0px 9px"
-        style={{
-           marginTop:"-27px",fontSize:"25px",textAlign:"center",color:"#000000",padding:"0px 9px"
-        }}
+        className="h-p1"
+       
       >
         We offer a variety of services for different automotive components
       </p>

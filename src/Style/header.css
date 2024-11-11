@@ -35,7 +35,9 @@
   justify-content: space-between;
   gap: 20px;
 }
-
+.loc-div{
+  margin-top: -5px;
+}
 .right-sec p {
   font-size: 16px;
   color: #cb3b42;
@@ -65,6 +67,9 @@
   cursor: pointer; /* Show pointer cursor on hover */
 }
 @media (max-width:768px){
+  .loc-div{
+    margin-top: -16px;
+  }
   .location{
     width: 100%;
     display: flex;

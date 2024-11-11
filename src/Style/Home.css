@@ -22,10 +22,17 @@ body {
   margin-bottom: 20px;
   padding: 0px 20px;
 }
-
 .about-h1 {
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
+  padding:0px 9px;
+  color: #05456c;
+  font-weight: bold;
+}
+.about-ho1 {
+  text-align: center;
+  font-size: 32px;
+  padding:0px 9px;
   color: #05456c;
   font-weight: bold;
 }
@@ -188,7 +195,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
  
 }
 .pre-section{
@@ -204,7 +210,7 @@ body {
 }
 .welcome-image{
   height: 35px;
-  width: 300px;
+  width: 275px;
 }
 .welcome-image>img{
   width: 100%;
@@ -225,6 +231,20 @@ body {
   object-fit: contain;
 }
 
+.about-hp1{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #05456c;
+}
+
+.h-p1{
+   margin-top: -27px;
+   font-size: 25px;
+   text-align: center;
+   color: black;
+   padding: 0px 9px;
+}
 /* @media (min-width: 769px) and (max-width: 1268px) {
    
   } */
@@ -234,6 +254,31 @@ body {
 /* Responsive Design for Tablets */
 
 @media (max-width: 768px) {
+  .welcome-image{
+    height: 35px;
+    width: 335px;
+  }
+  .h-p1{
+    margin-top: -18px;
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    padding: 0px 9px;
+ }
+  .about-hp1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #05456c;
+  }
+  .about-ho1 {
+    text-align: center;
+    font-size: 29px;
+    padding:0px 9px;
+    color: #05456c;
+    font-weight: bold;
+    margin-top: 10px;
+  }
   .welcome-serve{
     display: flex;
     justify-content: center;
@@ -243,16 +288,16 @@ body {
   }
   .welcome-serve>h3{
     font-size: 24px;
-    width: 75%;
+    width: 92%;
   }
   .first-heading{
     display: flex;
-    flex-direction: column;
-    gap: 0px;
+    /* flex-direction: column; */
+    gap: 5px;
   }
   .heading-logo{
-    height: 19px;
-    width: 153px;
+    height: 26px;
+    width: 170px;
   }
   .navbar {
     background-color: white;
