@@ -106,7 +106,7 @@ const EnquiryModal = ({ onClose }) => {
     <div className="modal-overlay1">
       <div className="modal-content1">
         <button className="close-button1" onClick={onClose} style={{marginTop:"-20px",marginBottom:"20px",color:"white",fontSize:"52px"}}>×</button>
-        <h2 style={{marginTop:"-20px",marginBottom:"20px",color:"white",fontSize:"22px"}}>Enquiry</h2>
+        <h2 style={{marginTop:"-15px",marginBottom:"20px",color:"white",fontSize:"22px"}}>Enquiry</h2>
         <form onSubmit={handleSubmit}>
             <div className="input-group">
               <input

@@ -330,7 +330,7 @@ useEffect(() => {
           isMobile?
             <div className="second-div22">
           <div className="carousel-container1">
-              <h1 className="about-h1" style={{fontSize:"18px",marginTop:"45px"}}>
+              <h1 className="about-h1" style={{fontSize:"18px",marginTop:"70px"}}>
                  A Premium Service Brand for Multibrands 
                  </h1>
             <div
@@ -361,7 +361,7 @@ useEffect(() => {
           </div>
             :
           <div className="second-div">
-        <h1 style={{fontSize:"20px",color:"#05456c"}}><span style={{fontSize:"20px"}}>A Premium Service Brands for </span>MultiBrands</h1>
+        <h1 style={{fontSize:"20px",color:"#05456c"}}><span style={{fontSize:"20px"}}>A Premium Service Brand for </span>MultiBrands</h1>
         <div>
         {imageData2.map((image, index) => (
               <img key={index} src={image} alt={`Service logo ${index + 1}`} />
