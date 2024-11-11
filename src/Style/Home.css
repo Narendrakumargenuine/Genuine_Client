@@ -209,12 +209,11 @@ body {
   color: transparent;
 }
 .welcome-image{
-  height: 35px;
-  width: 275px;
+ margin-left: 6px;
 }
 .welcome-image>img{
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 34px;
   object-fit: contain;
 }
 .heading-logo{
@@ -252,8 +251,7 @@ body {
 /* Premium Services Updated CSS */
 
 /* Responsive Design for Tablets */
-
-@media (max-width: 768px) {
+@media (max-width:300px) and (max-width:500){
   .welcome-image{
     margin-top: -2px;
     height: 25px;
@@ -289,6 +287,45 @@ body {
   }
   .welcome-serve>h3{
     font-size: 22px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-image {
+    margin-left: 5px;
+    margin-top: -2px;
+}
+  .h-p1{
+    margin-top: -18px;
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    padding: 0px 9px;
+ }
+  .about-hp1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #05456c;
+  }
+  .about-ho1 {
+    text-align: center;
+    font-size: 29px;
+    padding:0px 9px;
+    color: #05456c;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .welcome-serve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+   
+  }
+  .welcome-serve>h3{
+    font-size: 25px;
     width: 100%;
   }
   .first-heading{

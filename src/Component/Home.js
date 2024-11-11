@@ -108,8 +108,11 @@ const Home = () => {
           About <span>Genuine Serve</span>
         </h1>
         <div className="welcome-serve">
-        <h3 className="about-h1" style={{color:"#05456c"}}>Welcome to </h3>
-        <div className="welcome-image"><img src={Logo}/></div>
+        <h3 className="about-h1" style={{color:"#05456c"}}>Welcome to 
+
+          <span className="welcome-image"><img src={Logo}/></span>
+        </h3>
+        {/* <div </div> */}
         
         </div>
        
@@ -125,15 +128,12 @@ const Home = () => {
       <div className="about us">
         <div className="first-heading">
          
-          <h1 className="about-h1" style={{color:"#05456c"}}>
-          Why Choose 
-        </h1>
          
+        <h1 className="about-h1" style={{color:"#05456c"}}>Why Choose  
+
+<span className="welcome-image"><img src={Logo}/></span>?
+</h1>
       
-        <div className="heading-logo">
-        <img src={Logo} height={100}/>
-        <p style={{color:"#05456c",marginTop:"13px"}}>?</p>
-        </div>
          
         </div>
        
