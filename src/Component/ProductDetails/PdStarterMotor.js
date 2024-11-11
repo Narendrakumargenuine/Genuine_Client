@@ -171,7 +171,7 @@ const PdStarterMotor = () => {
                 marginBottom: "10px",
               }}
             >
-              <span style={{ color: "#064c1b", fontWeight: "bold" }}>
+              <span style={{ color: "#05456c", fontWeight: "bold" }}>
                 At GenuineServe
               </span>
               , we use the latest technologies and equipment to deliver

@@ -121,7 +121,7 @@ const PdAcComp = () => {
                     <div >
                     <h1 className="first-h31">Advanced Technology for Liquid Cooled Alternator Services
                     </h1>
-                    <p style={{width:"80%",margin:"auto",textAlign:"center",marginTop:"20px",fontSize:"14px",marginBottom:"10px"}}><span style={{color:"#064c1b",fontWeight:"bold"}}>At GenuineServe</span>, we combine cutting-edge technology with our deep expertise in automotive electrical systems to deliver precise, high-quality repairs for liquid cooled alternators. Our goal is to extend the life of your alternator while ensuring optimal performance.
+                    <p style={{width:"80%",margin:"auto",textAlign:"center",marginTop:"20px",fontSize:"14px",marginBottom:"10px"}}><span style={{color:"#05456c",fontWeight:"bold"}}>At GenuineServe</span>, we combine cutting-edge technology with our deep expertise in automotive electrical systems to deliver precise, high-quality repairs for liquid cooled alternators. Our goal is to extend the life of your alternator while ensuring optimal performance.
                     </p>
                     </div>
                     </div>

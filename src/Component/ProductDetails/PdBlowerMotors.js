@@ -118,7 +118,7 @@ const PdAcComp = () => {
                     <div >
                     <h1 className="first-h31">State-of-the-Art Blower Motor Testing and Repair
                     </h1>
-                    <p style={{width:"80%",margin:"auto",textAlign:"center",marginTop:"20px",fontSize:"14px",marginBottom:"10px"}}><span style={{color:"#064c1b",fontWeight:"bold"}}>At GenuineServe</span>, we combine technical expertise with the latest technology to ensure precise blower motor diagnostics and repairs. Our goal is to restore your vehicle's climate control system to peak performance as quickly and reliably as possible.
+                    <p style={{width:"80%",margin:"auto",textAlign:"center",marginTop:"20px",fontSize:"14px",marginBottom:"10px"}}><span style={{color:"#05456c",fontWeight:"bold"}}>At GenuineServe</span>, we combine technical expertise with the latest technology to ensure precise blower motor diagnostics and repairs. Our goal is to restore your vehicle's climate control system to peak performance as quickly and reliably as possible.
                     </p>
                     </div>
                     </div>

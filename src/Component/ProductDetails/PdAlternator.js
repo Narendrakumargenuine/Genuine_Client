@@ -167,7 +167,7 @@ const ProductDetails = () => {
                 marginBottom: "10px",
               }}
             >
-              <span style={{ color: "#064c1b", fontWeight: "bold" }}>
+              <span style={{ color: "#05456c", fontWeight: "bold" }}>
                 At GenuineServe
               </span>
               , we are committed to using state-of-the-art technology to deliver

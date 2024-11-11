@@ -118,7 +118,7 @@ const PdAcComp = () => {
                    <div className="first-second-aboutus11">
                     <div >
                     <h1 className="first-h31">Advanced Technology for AC Compressor Repairs</h1>
-                    <p style={{width:"80%",margin:"auto",textAlign:"center",marginTop:"20px",fontSize:"14px",marginBottom:"10px"}}><span style={{color:"#064c1b",fontWeight:"bold"}}>At GenuineServe</span>,we use state-of-the-art technology and tools to ensure precise, high-quality repairs and replacements for your vehicle’s AC compressor:
+                    <p style={{width:"80%",margin:"auto",textAlign:"center",marginTop:"20px",fontSize:"14px",marginBottom:"10px"}}><span style={{color:"#05456c",fontWeight:"bold"}}>At GenuineServe</span>,we use state-of-the-art technology and tools to ensure precise, high-quality repairs and replacements for your vehicle’s AC compressor:
                     </p>
                     </div>
                     </div>

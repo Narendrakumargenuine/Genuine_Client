@@ -170,7 +170,7 @@ const WiperMotor = () => {
                 marginBottom: "10px",
               }}
             >
-              <span style={{ color: "#064c1b", fontWeight: "bold" }}>
+              <span style={{ color: "#05456c", fontWeight: "bold" }}>
                 At GenuineServe
               </span>
               , we combine technical expertise with state-of-the-art facilities

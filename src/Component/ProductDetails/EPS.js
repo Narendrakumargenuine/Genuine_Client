@@ -170,7 +170,7 @@ const EPS = () => {
                 marginBottom: "10px",
               }}
             >
-              <span style={{ color: "#064c1b", fontWeight: "bold" }}>
+              <span style={{ color: "#05456c", fontWeight: "bold" }}>
                 At GenuineServe
               </span>
               , we understand the importance of precision and reliability in
