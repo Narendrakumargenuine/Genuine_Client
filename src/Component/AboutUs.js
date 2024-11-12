@@ -24,10 +24,99 @@ const AboutUs = ()=>{
           <div className="aboutus-border"></div>
             <div className="aboutus-first-container">
             <div className="first-section">
-                <h1 style={{color:"#05456c"}}>About us</h1>
+            <div className="first-heading">
+         
+         
+         <h1 className="about-h1" style={{color:"#05456c"}}>Genuineserve 
+ 
+ <span className="welcome-image"><img src={Logo}/></span>
+ </h1>
+       
+          
+         </div>
+        
                 <p>
                 At GenuineServe, our mission is to offer unparalleled auto electrical services that cater to all your vehicle needs. With over three decades of experience, our expert team has built a legacy of excellence, trust, and reliability in the automotive industry. Our passion for innovation and commitment to quality drive us to provide solutions that exceed our customers' expectations.</p>
             </div>
+          
+            <div className="first-first-section">
+              <div className="first-first-aboutus">
+                <div className="description-aboutus">
+                {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
+                <p style={{fontSize:"15px",fontWeight:"600"}}>Genuineserve is the trusted service brand of Genuine Auto Electrical Service Company, founded by Narendra Kumar S in 2010. With over 35 years of expertise in diagnosing and servicing:
+                </p>
+                <ul>
+                    <li>Starter Motors
+                    </li>
+                    <li>Alternators
+                    </li>
+                    <li>A/C Compressors
+                    </li>
+                    <li>A/C Blower Motors
+                    </li>
+                    <li>Air Suspension Compressors
+                    </li>
+                    <li>EPS Columns
+                    </li>
+                    <li>All types of Automotive Motors
+
+</li>
+                </ul>
+                </div>
+                </div>
+              <div className="imga-aboutus">
+                <img src={vision}/>
+              </div>
+            </div>
+            <div className="first-first-section">
+              <div className="first-first-aboutus">
+                <div className="description-aboutus">
+                {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
+                <p style={{fontSize:"15px",fontWeight:"600"}}>Our company has established a strong reputation for quality and reliability. Building on this legacy, we launched Genuineserve in 2018, reaffirming our commitment to delivering:
+
+                </p>
+                <ul>
+                    <li> Premier, high-performance automotive electrical services
+
+                    </li>
+                    <li>State-of-the-art technology
+
+                    </li>
+                    <li>OE-certified methods
+
+                  </li>
+                </ul>
+                </div>
+                </div>
+              <div className="imga-aboutus">
+                <img src={vision}/>
+              </div>
+            </div>
+
+            <div className="first-first-section">
+              <div className="first-first-aboutus">
+                <div className="description-aboutus">
+                {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
+                <p style={{fontSize:"15px",fontWeight:"600"}}>At Genuineserve, we cater to a wide range of vehicle needs, ensuring unparalleled expertise and innovative solutions.
+
+
+
+                </p>
+                <p style={{fontSize:"15px",fontWeight:"550"}}>About Genuine Auto Electrical Service Company:
+
+</p>
+               <p>Founded in 2010 by Narendra Kumar S
+35+ years of industry experience
+Strong reputation for quality and reliability
+Registered Service brand, Genuineserve, launched in 2018
+</p>
+                </div>
+                </div>
+              <div className="imga-aboutus">
+                <img src={vision}/>
+              </div>
+            </div>
+
             <div className="first-first-section">
               <div className="first-first-aboutus">
                 <div className="description-aboutus">
@@ -42,8 +131,7 @@ const AboutUs = ()=>{
                 <img src={vision}/>
               </div>
             </div>
-
-
+  
             <div className="first-second-section">
            { !isMobile?<div className="imga-aboutus1">
                 <img src={aboutus2}/>
