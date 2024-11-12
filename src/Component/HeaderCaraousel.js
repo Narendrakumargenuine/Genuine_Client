@@ -8,23 +8,22 @@ import Image3 from "../Assets/HeaderCaraousel/ac_compressor.png";
 import Image4 from "../Assets/HeaderCaraousel/air_suspension_compressor.png";
 import Image5 from "../Assets/HeaderCaraousel/alternator.png";
 import Image6 from "../Assets/HeaderCaraousel/eps_column.png";
-import Image7 from "../Assets/HeaderCaraousel/image1.jpg";
+import Image7 from "../Assets/HeaderCaraousel/image1.png";
 import Image8 from "../Assets/HeaderCaraousel/starter_motor.png";
 
 import '../Style/HeaderCara.css'; // Import custom CSS
 
 const CarouselComponent = () => {
   const [index, setIndex] = useState(0);
-  const images = [Image7, Image6, Image5]; // Array of images for carousel
   const slides = [
     { src: Image7, name: "Blower Motor", key: "Efficient Climate Control" },
     { src: Image2, name: "Alternator", key: "Reliable Power for Vehicle" },
-    { src: Image3, name: "Starter Motor", key: "Reliable Engine Ignition" },
+    { src: Image3, name: "AC Compressor", key: "Reliable Engine Ignition" },
     { src: Image4, name: "Air Suspension Compressor", key: "Smooth Rides" },
-    { src: Image5, name: "EPS Motor", key: "Effortless Steering" },
-    { src: Image6, name: "Liquid Cooled Alternator", key: "High Efficiency" },
-    { src: Image1, name: "Wiper Motor", key: "Clear Visibility" },
-    { src: Image8, name: "AC Compressor", key: "Comfortable Cooling" },
+    { src: Image5, name: "Alternator", key: "Effortless Steering" },
+    { src: Image6, name: "EPS Column", key: "High Efficiency" },
+    { src: Image1, name: "AC Fan Motor", key: "Clear Visibility" },
+    { src: Image8, name: "Starter Motor", key: "Comfortable Cooling" },
   ];
   // Set interval for slide transition (5 seconds)
   useEffect(() => {
