@@ -5,6 +5,7 @@ import "../Style/Contact.css";
 import aboutus2 from "../Assets/aboutus-second.png"
 import Footer from "./Footer";
 import testimonial from "../Assets/testimonials.png"
+import founder from "../Assets/founder1.jpeg"
 import test from "../Assets/test1.png"
 import test1 from "../Assets/test2.png"
 import test2 from "../Assets/test3.png"
@@ -22,8 +23,7 @@ const AboutUs = ()=>{
     return(
         <div className="aboutus-container">
           <div className="aboutus-border"></div>
-            <div className="aboutus-first-container">
-            <div className="first-section">
+          <div className="first-section">
             <div className="first-heading">
          
          
@@ -38,7 +38,20 @@ const AboutUs = ()=>{
                 <p>
                 At GenuineServe, our mission is to offer unparalleled auto electrical services that cater to all your vehicle needs. With over three decades of experience, our expert team has built a legacy of excellence, trust, and reliability in the automotive industry. Our passion for innovation and commitment to quality drive us to provide solutions that exceed our customers' expectations.</p>
             </div>
-          
+          <div className="founder-section">
+           {isMobile? <div className="image33">
+                <img src={founder}/>
+              </div>:""}
+              <div className="first-first-aboutus1">
+                 <p>“It takes 20 years to build a reputation and 5 minutes to ruin it. If you think about that, you’ll do things differently.”  – Name, Founder of GenuineServe</p>
+                </div>
+               {!isMobile? <div className="image33">
+                <img src={founder}/>
+              </div>:""}
+             </div>
+            <div className="aboutus-first-container">
+           
+            
             <div className="first-first-section">
               <div className="first-first-aboutus">
                 <div className="description-aboutus">
