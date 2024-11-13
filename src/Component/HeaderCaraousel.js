@@ -33,7 +33,7 @@ const CarouselComponent = () => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
       setShowText(false);  // Hide text initially
       setTimeout(() => setShowText(true), 2000); // Show text after 2 seconds
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(intervalId);
   }, [slides.length]);
