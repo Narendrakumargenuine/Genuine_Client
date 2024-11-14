@@ -77,7 +77,10 @@
 }
 @media (max-width:768px){
   .caraousel-h1{
-    font-size: 18px;
+    font-size: 25px;
+  }
+  .span-text11{
+    font-size: 20px;
   }
   .d-block {
     height: 400px;
