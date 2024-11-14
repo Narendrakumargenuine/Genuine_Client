@@ -36,7 +36,21 @@
   gap: 20px;
 }
 .loc-div{
-  margin-top: -5px;
+  font-size: 23px;
+  color: #dc4c4f;
+}
+.loc-div1{
+  display: flex
+  ;
+      width: 30px;
+      height: 31px;
+      font-size: 21px;
+      color: #ffff;
+      background-color: #dc4c4f;
+      border-radius: 2px;
+      margin-top: -8px;
+      justify-content: center;
+      align-items: center;
 }
 .right-sec p {
   font-size: 16px;

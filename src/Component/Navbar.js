@@ -6,7 +6,9 @@ import EnquiryModal from "./EnquiryModal";
 import "../Style/Navbar.css";
 import Logo from "../Assets/logo.jpg";
 import BOSCH from "../Assets/bos1.jpg";
-
+import { MdCall } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -211,12 +213,11 @@ const Navbar = () => {
             </div>
              <p className="bosh-navbar">BOSCH Authorised Service Centre</p>
         <div className="location">
+         
           <div className="loc-div">
-            <i
-              class="fa-solid fa-location-dot"
-              style={{ color: "#C51212", fontSize: "14px" }}
-            ></i>
+            <FaLocationDot style={{color:""}}/>
           </div>
+         
           <div>
             <Link to={"https://maps.app.goo.gl/kPtAfqa86TrEbmeR8"} target="_blank" className="location-link"><p>5th Cross, LBF Road, Bengaluru-560004</p></Link>
           </div>

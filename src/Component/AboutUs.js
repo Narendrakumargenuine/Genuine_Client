@@ -38,7 +38,7 @@ const AboutUs = ()=>{
                 <p>
                 At GenuineServe, our mission is to offer unparalleled auto electrical services that cater to all your vehicle needs. With over three decades of experience, our expert team has built a legacy of excellence, trust, and reliability in the automotive industry. Our passion for innovation and commitment to quality drive us to provide solutions that exceed our customers' expectations.</p>
             </div>
-          <div className="founder-section">
+          {/* <div className="founder-section">
            {isMobile? <div className="image33">
                 <img src={founder}/>
               </div>:""}
@@ -48,7 +48,7 @@ const AboutUs = ()=>{
                {!isMobile? <div className="image33">
                 <img src={founder}/>
               </div>:""}
-             </div>
+             </div> */}
             <div className="aboutus-first-container">
            
             

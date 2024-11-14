@@ -51,8 +51,9 @@ const CarouselComponent = () => {
             <img className="d-block w-100" src={image.src} alt={`Slide ${idx + 1}`} />
             {showText && (
               <div className="carousel-caption112">
-                <h1 style={{ color: "#064869" }} className="caraousel-h1">{`${image.name}: ${image.key}`}</h1>
-                <h1 style={{ color: "#df222d" }} className="caraousel-h1">{image.key1}</h1>
+                <h1 style={{ color: "#064869" }} className="caraousel-h1">{image.name}:- {" "}
+                <span className="span-text11">{`"${image.key}"`}</span></h1>
+                <h1 style={{ color: "#df222d" }} className="span-text11">{image.key1}</h1>
               </div>
             )}
           </div>

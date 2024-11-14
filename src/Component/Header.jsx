@@ -3,6 +3,9 @@ import "../Style/header.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaFacebook } from "react-icons/fa";
+import { MdCall } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 function Header() {
   const [activeLink, setActiveLink] = useState("/");
@@ -27,10 +30,7 @@ function Header() {
       <div className="head-container">
         <div className="location">
           <div className="loc-div">
-            <i
-              class="fa-solid fa-location-dot"
-              style={{ color: "#C51212", fontSize: "24px",marginBottom:"11px" }}
-            ></i>
+            <FaLocationDot style={{color:""}}/>
           </div>
           <div>
             <Link to={"https://maps.app.goo.gl/kPtAfqa86TrEbmeR8"} target="_blank"><p>5/9, 5th Cross, LBF Road, Bengaluru-560004</p></Link>
@@ -38,7 +38,10 @@ function Header() {
         </div>
         <div className="contact-detail">
                 <div className="call-container">
-                  <i class="fa-solid fa-phone"></i>
+                  <div className="loc-div1">
+                  <MdCall/>
+                  </div>
+                
                  <div className="call">
                   <div>
                   <p >
@@ -64,7 +67,7 @@ function Header() {
                   </Link>
                 </div>
                 <div className="whatsapp-container1" onClick={handleWhatsAppClick}>
-        <i class="fa-brands fa-whatsapp"></i>
+                 <FaWhatsapp/>
       </div>
               </div>
         <div className="right-sec">

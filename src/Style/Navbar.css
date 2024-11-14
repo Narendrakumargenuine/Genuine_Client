@@ -123,7 +123,7 @@ font-size: 24px;
   height: 50%;
 }
 .navbar-third-sec {
-  width: 15%;
+  width: 121px;
   /* display: flex;
   align-items: start;
   justify-content: center; */
@@ -200,13 +200,14 @@ font-size: 24px;
 
 /* Enquiry Button */
 .enquiry-button {
+  font-size: 14px;
   width: 100%;
   /* border: 1px solid #094e1f; */
   outline: none;
   border: none;
   color: white;
   font-weight: bold;
-  padding: 12px;
+  padding: 8px;
   border-radius: 0px;
   text-align: center;
   cursor: pointer;
@@ -236,13 +237,12 @@ font-size: 24px;
 .call-us button {
   width: 100%;
   padding: 10px;
-  border: 1px solid #a00000;
+  border: none;
   outline: none;
   cursor: pointer;
   background-color: transparent;
   font-size: 14px;
   font-weight: 700;
-  border-radius: 19px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px;
 }
