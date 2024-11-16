@@ -107,12 +107,9 @@ const Home = () => {
         <h1 className="about-ho1">
           About <span>Genuine Serve</span>
         </h1>
-        <div style={{display:"flex"}}>
-        <h3 className="about-h1" style={{color:"#05456c"}}>Welcome to 
-
-         
-        </h3>
-        <span className="welcome-image"><img src={Logo}/></span>
+        <div className="wel-about">
+        <h3 className="about-h1" style={{color:"#05456c"}}>Welcome to </h3>
+        <div className="welcome-image11"><img src={Logo}/></div>
         </div>
        
         </div>
@@ -125,15 +122,10 @@ const Home = () => {
       </div>
 
       <div className="about us">
-        <div className="first-heading">
-         
-         
-        <h1 className="about-h1" style={{color:"#05456c"}}>Why Choose  
-
-<span className="welcome-image"><img src={Logo}/></span>?
-</h1>
-      
-         
+      <div className="wel-about">
+        <h3 className="about-h1" style={{color:"#05456c"}}>Why Choose </h3>
+        <div className="welcome-image111"><img src={Logo}/></div>
+        <h1 style={{color:"#05456c"}}>?</h1>
         </div>
        
         <p className="welcome det" style={{ marginTop: "20px" }}>

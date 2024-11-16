@@ -136,7 +136,33 @@ body {
   color: #094e1f;
   cursor: pointer;
 }
+.wel-about{
+  display: flex;
+  width: 40%;
 
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-image11{
+  width: 41%;
+  padding-top: 13px;
+
+}
+.welcome-image111{
+  width: 50%;
+  padding-top: 13px;
+}
+.welcome-image111>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.welcome-image11>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .container-second-div {
   display: flex;
   justify-content: space-evenly;
@@ -258,6 +284,13 @@ body {
     height: 25px;
     width: 100%;
   }
+  .welcome-image11 {
+   width: 100%;
+   padding-top: 0px;
+  }
+  .wel-about {
+  width: 100%;
+  }
   .h-p1{
     margin-top: -18px;
     font-size: 17px;
@@ -293,10 +326,15 @@ body {
 }
 
 @media (max-width: 768px) {
-  .welcome-image {
-    margin-left: 5px;
-    margin-top: -2px;
-}
+  .welcome-image11 {
+    width: 100%;
+    padding-top: 7px;
+    margin-left: -11px;
+   }
+   .wel-about {
+   width: 100%;
+   }
+
   .h-p1{
     margin-top: -18px;
     font-size: 17px;
@@ -325,6 +363,10 @@ body {
     gap: 0px;
    
   }
+  .welcome-image111 {
+ width: 100%;
+ padding-top: 6px;
+  }
   .welcome-serve>h3{
     font-size: 21px;
     width: 100%;
@@ -349,12 +391,13 @@ body {
   }
   .det {
     width: 100%;
-    text-align: start;
+    text-align: center;
     font-size: 14px;
   }
   .about-h1 {
     width: 100%;
-    font-size: 20px;
+    font-size: 21px;
+    padding: 0px;
 }
 
   .product-sample {

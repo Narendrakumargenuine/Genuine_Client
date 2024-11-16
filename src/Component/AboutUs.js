@@ -5,7 +5,7 @@ import "../Style/Contact.css";
 import aboutus2 from "../Assets/aboutus-second.png"
 import Footer from "./Footer";
 import testimonial from "../Assets/testimonials.png"
-import founder from "../Assets/founder1.jpeg"
+import founder from "../Assets/founder1.png"
 import test from "../Assets/test1.png"
 import test1 from "../Assets/test2.png"
 import test2 from "../Assets/test3.png"
@@ -24,41 +24,33 @@ const AboutUs = ()=>{
         <div className="aboutus-container">
           <div className="aboutus-border"></div>
           <div className="first-section">
-            <div className="first-heading">
-         
-         
-         <h1 className="about-h1" style={{color:"#05456c"}}>Genuineserve 
- 
- <span className="welcome-image"><img src={Logo}/></span>
- </h1>
-       
-          
-         </div>
-        
-                <p>
+           
+            <div className="wel-about">
+        <h3 className="about-h1" style={{color:"#05456c"}}>Genuineserve </h3>
+        <div className="welcome-image12"><img src={Logo}/></div>
+        </div>
+             <p>
                 At GenuineServe, our mission is to offer unparalleled auto electrical services that cater to all your vehicle needs. With over three decades of experience, our expert team has built a legacy of excellence, trust, and reliability in the automotive industry. Our passion for innovation and commitment to quality drive us to provide solutions that exceed our customers' expectations.</p>
             </div>
-          {/* <div className="founder-section">
-           {isMobile? <div className="image33">
+          <div className="founder-section">
+              <div className="image33">
                 <img src={founder}/>
-              </div>:""}
-              <div className="first-first-aboutus1">
+              </div>
+              <div className="fount-text">
                  <p>“It takes 20 years to build a reputation and 5 minutes to ruin it. If you think about that, you’ll do things differently.”  – Name, Founder of GenuineServe</p>
                 </div>
-               {!isMobile? <div className="image33">
-                <img src={founder}/>
-              </div>:""}
-             </div> */}
+              
+             </div>
             <div className="aboutus-first-container">
            
             
-            <div className="first-first-section">
-              <div className="first-first-aboutus">
-                <div className="description-aboutus">
+            <div className="first-second-section">
+              <div className="first-second-aboutus">
+                <div >
                 {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
                 <p style={{fontSize:"15px",fontWeight:"600"}}>Genuineserve is the trusted service brand of Genuine Auto Electrical Service Company, founded by Narendra Kumar S in 2010. With over 35 years of expertise in diagnosing and servicing:
                 </p>
-                <ul>
+                <ul className="ul-about">
                     <li>Starter Motors
                     </li>
                     <li>Alternators
@@ -77,21 +69,21 @@ const AboutUs = ()=>{
                 </ul>
                 </div>
                 </div>
-                <div className="imga-aboutus">
+                <div className="imga-aboutus1">
                 <img src={vision}/>
               </div>
             </div>
-            <div className="first-first-section">
-            <div className="imga-aboutus">
+            <div className="first-second-section">
+           { !isMobile?<div className="imga-aboutus1">
                 <img src={vision}/>
-              </div>
-              <div className="first-first-aboutus">
-                <div className="description-aboutus">
+              </div>:""}
+              <div className="first-second-aboutus">
+                <div>
                 {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
                 <p style={{fontSize:"15px",fontWeight:"600"}}>Our company has established a strong reputation for quality and reliability. Building on this legacy, we launched Genuineserve in 2018, reaffirming our commitment to delivering:
 
                 </p>
-                <ul>
+                <ul className="ul-about">
                     <li> Premier, high-performance automotive electrical services
 
                     </li>
@@ -104,13 +96,15 @@ const AboutUs = ()=>{
                 </ul>
                 </div>
                 </div>
-           
+                { isMobile?<div className="imga-aboutus1">
+                <img src={vision}/>
+              </div>:""}
             </div>
 
-            <div className="first-first-section">
+            <div className="first-second-section">
            
-              <div className="first-first-aboutus">
-                <div className="description-aboutus">
+              <div className="first-second-aboutus">
+                <div>
                 {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
                 <p style={{fontSize:"15px",fontWeight:"600"}}>At Genuineserve, we cater to a wide range of vehicle needs, ensuring unparalleled expertise and innovative solutions.
 
@@ -127,17 +121,17 @@ Registered Service brand, Genuineserve, launched in 2018
 </p>
                 </div>
                 </div>
-                <div className="imga-aboutus">
+                <div className="imga-aboutus1">
                 <img src={vision}/>
               </div>
             </div>
 
-            <div className="first-first-section">
-            <div className="imga-aboutus">
+            <div className="first-second-section">
+            { !isMobile?<div className="imga-aboutus1">
                 <img src={vision}/>
-              </div>
-              <div className="first-first-aboutus">
-                <div className="description-aboutus">
+              </div>:""}
+              <div className="first-second-aboutus">
+                <div>
                 <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1>
                 <p><span style={{fontSize:"13px",fontWeight:"600"}}>Customer-Centric Approach</span> : We place our customers at the heart of everything we do, striving to deliver the highest level of satisfaction.
                 </p>
@@ -145,13 +139,13 @@ Registered Service brand, Genuineserve, launched in 2018
                 <p><span style={{fontSize:"13px",fontWeight:"600"}}>Integrity and Transparency</span> : We believe in building long-term relationships based on trust, honesty, and transparency with our clients.</p>
                 </div>
                 </div>
-             
+                { isMobile?<div className="imga-aboutus1">
+                <img src={vision}/>
+              </div>:""}
             </div>
   
             <div className="first-second-section">
-           { isMobile?<div className="imga-aboutus1">
-                <img src={aboutus2}/>
-              </div>:""}
+        
               <div className="first-second-aboutus">
                     <div >
                     <h1 className="first-h3"   style={{color:"#05456c"}}>2.Our Expertise</h1>
@@ -167,9 +161,9 @@ Registered Service brand, Genuineserve, launched in 2018
                     </p>
                   </div>
               </div>
-             {!isMobile? <div className="imga-aboutus1">
+            <div className="imga-aboutus1">
                 <img src={aboutus2}/>
-              </div>:""}
+              </div>
             </div>
 
             <div className="first-third-section">
