@@ -24,11 +24,11 @@ import Service2 from "../Assets/ServiceImage/download 9.png";
 import Service3 from "../Assets/ServiceImage/download 10.png";
 import Service4 from "../Assets/ServiceImage/download 11.png";
 import Service5 from "../Assets/ServiceImage/Group 95.png";
+import Caraousel from "./DemoCaraousel.js"
 import Service6 from "../Assets/ServiceImage/IMG-20240813-WA0038.png";
 import Service7 from "../Assets/ServiceImage/pngegg (11) 1.png";
 import Service8 from "../Assets/ServiceImage/pngegg (12) 1.png";
 import Service9 from "../Assets/ServiceImage/Prestolite_Electric_logo.svg 1.png";
-import HeaderCaraousel from "./HeaderCaraousel";
 import PremiumSection from "./PremiumSection";
 const Home = () => {
   const imageData2 = [
@@ -100,20 +100,19 @@ const Home = () => {
   return (
     <div className="main-container">
        <div className="aboutus-border244"></div>
-      <HeaderCaraousel/>
-  
+      {/* <HeaderCaraousel/> */}
+  <Caraousel/>
       <div className="about us">
         <div>
         <h1 className="about-ho1">
           About <span>Genuine Serve</span>
         </h1>
-        <div className="welcome-serve">
+        <div style={{display:"flex"}}>
         <h3 className="about-h1" style={{color:"#05456c"}}>Welcome to 
 
-          <span className="welcome-image"><img src={Logo}/></span>
+         
         </h3>
-        {/* <div </div> */}
-        
+        <span className="welcome-image"><img src={Logo}/></span>
         </div>
        
         </div>

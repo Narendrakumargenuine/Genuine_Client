@@ -1,0 +1,91 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carouselSlide {
+  min-width: 100%;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* For text overlay */
+}
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  width: 100%; /* Ensure it spans the full width of the slider */
+  background-color: rgba(171, 165, 165, 0.8);
+  text-align: left;
+  padding: 20px;
+  color: white;
+  transform: translateY(100%); /* Hidden initially */
+  opacity: 0; /* Invisible initially */
+}
+
+.show-text {
+  animation: slide-up 0.8s ease-in-out forwards;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cara-name {
+  font-size: 30px;
+  color: #054970;
+}
+
+.cara-key {
+  font-size: 22px;
+  color: #054970;
+}
+
+.cara-key1 {
+  font-size: 22px;
+  color: #de323b;
+}
+@media (max-width:768px){
+  .carouselSlide {
+   height: 300px;
+  }
+  .carouselImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .cara-name {
+    font-size: 20px;
+    color: #054970;
+  }
+  
+  .cara-key {
+    font-size: 16px;
+    color: #054970;
+  }
+  
+  .cara-key1 {
+    font-size: 16px;
+    color: #de323b;
+  }
+}

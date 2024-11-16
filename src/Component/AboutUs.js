@@ -77,11 +77,14 @@ const AboutUs = ()=>{
                 </ul>
                 </div>
                 </div>
-              <div className="imga-aboutus">
+                <div className="imga-aboutus">
                 <img src={vision}/>
               </div>
             </div>
             <div className="first-first-section">
+            <div className="imga-aboutus">
+                <img src={vision}/>
+              </div>
               <div className="first-first-aboutus">
                 <div className="description-aboutus">
                 {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
@@ -101,12 +104,11 @@ const AboutUs = ()=>{
                 </ul>
                 </div>
                 </div>
-              <div className="imga-aboutus">
-                <img src={vision}/>
-              </div>
+           
             </div>
 
             <div className="first-first-section">
+           
               <div className="first-first-aboutus">
                 <div className="description-aboutus">
                 {/* <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1> */}
@@ -125,12 +127,15 @@ Registered Service brand, Genuineserve, launched in 2018
 </p>
                 </div>
                 </div>
-              <div className="imga-aboutus">
+                <div className="imga-aboutus">
                 <img src={vision}/>
               </div>
             </div>
 
             <div className="first-first-section">
+            <div className="imga-aboutus">
+                <img src={vision}/>
+              </div>
               <div className="first-first-aboutus">
                 <div className="description-aboutus">
                 <h1 className="first-h2"   style={{color:"#05456c"}}>1. Our vision and values</h1>
@@ -140,13 +145,11 @@ Registered Service brand, Genuineserve, launched in 2018
                 <p><span style={{fontSize:"13px",fontWeight:"600"}}>Integrity and Transparency</span> : We believe in building long-term relationships based on trust, honesty, and transparency with our clients.</p>
                 </div>
                 </div>
-              <div className="imga-aboutus">
-                <img src={vision}/>
-              </div>
+             
             </div>
   
             <div className="first-second-section">
-           { !isMobile?<div className="imga-aboutus1">
+           { isMobile?<div className="imga-aboutus1">
                 <img src={aboutus2}/>
               </div>:""}
               <div className="first-second-aboutus">
@@ -164,7 +167,7 @@ Registered Service brand, Genuineserve, launched in 2018
                     </p>
                   </div>
               </div>
-             {isMobile? <div className="imga-aboutus1">
+             {!isMobile? <div className="imga-aboutus1">
                 <img src={aboutus2}/>
               </div>:""}
             </div>
